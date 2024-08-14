@@ -1,13 +1,15 @@
 import grapesjs, { Editor } from "grapesjs";
-import GjsEditor, { Canvas, DevicesProvider } from "@grapesjs/react";
-import gsPluginBlocksBasic from "grapesjs-blocks-basic";
-import { Monitor, Smartphone, Tablet } from "lucide-react";
+import GjsEditor, {
+  BlocksProvider,
+  Canvas,
+  DevicesProvider,
+} from "@grapesjs/react";
 import { Button } from "../components/ui/button";
-import { CiMobile3 } from "react-icons/ci";
 import { FaDesktop, FaMobileAlt } from "react-icons/fa";
 import { FaTabletScreenButton } from "react-icons/fa6";
 import { BiMobileLandscape } from "react-icons/bi";
-import { useState } from "react";
+import CustomBlockManager from "./custom-block-manager";
+import gsPluginBlocksBasic from "grapesjs-blocks-basic";
 
 export const Grapesjs = () => {
   const onEditor = async (editor: Editor) => {
@@ -35,16 +37,14 @@ export const Grapesjs = () => {
     // });
   };
 
-  const [selectDevice, setSelectDevice] = useState("");
-
   const handleDevice = (selected: string | number, select) => {
-    console.log(selected);
     select(selected);
   };
 
   return (
-    <>
+    <div>
       <GjsEditor
+        className="gjs-custom-editor text-slate-500 "
         // Pass the core GrapesJS library to the wrapper (required).
         // You can also pass the CDN url (eg. "https://unpkg.com/grapesjs")
         grapesjs={grapesjs}
@@ -57,64 +57,73 @@ export const Grapesjs = () => {
           storageManager: false,
         }}
         onEditor={onEditor}
-        // plugins={[gsPluginBlocksBasic]}
+        plugins={[gsPluginBlocksBasic]}
       >
-        <div className="bg-slate-50">
-          <div className="xxxx">
-            <DevicesProvider>
-              {({ devices, select, selected }) => {
-                console.log({ devices, select, selected });
+        <div className="flex h-full">
+          <section className="flex-1 flex flex-col">
+            <div className="border-b bg-slate-50">
+              <DevicesProvider>
+                {({ devices, select, selected }) => {
+                  const iconInactive = `text-xl text-slate-500`;
+                  const iconActive = `text-xl text-slate-900`;
+                  // TODO: will implement icon active or not
 
-                return (
-                  <div>
-                    {devices.length > 0 && (
-                      <Button
-                        variant={"ghost"}
-                        className="px-2"
-                        title={devices[0].getName()}
-                        onClick={() => handleDevice(devices[0]?.id, select)}
-                      >
-                        <FaDesktop className="text-xl" />
-                      </Button>
-                    )}
-                    {devices.length > 1 && (
-                      <Button
-                        variant={"ghost"}
-                        className="px-2"
-                        title={devices[1].getName()}
-                        onClick={() => handleDevice(devices[1]?.id, select)}
-                      >
-                        <FaTabletScreenButton className="text-xl" />
-                      </Button>
-                    )}
-                    {devices.length > 2 && (
-                      <Button
-                        variant={"ghost"}
-                        className="px-2"
-                        title={devices[2].getName()}
-                        onClick={() => handleDevice(devices[2]?.id, select)}
-                      >
-                        <FaMobileAlt className="text-xl" />
-                      </Button>
-                    )}
-                    {devices.length > 3 && (
-                      <Button
-                        variant={"ghost"}
-                        className="px-2"
-                        title={devices[3].getName()}
-                        onClick={() => handleDevice(devices[3]?.id, select)}
-                      >
-                        <BiMobileLandscape className="text-xl" />
-                      </Button>
-                    )}
-                  </div>
-                );
-              }}
-            </DevicesProvider>
-            <Canvas className=" bg-slate-100" />
-          </div>
+                  return (
+                    <div>
+                      {devices.length > 0 && (
+                        <Button
+                          variant={"ghost"}
+                          className="px-2"
+                          title={devices[0].getName()}
+                          onClick={() => handleDevice(devices[0]?.id, select)}
+                        >
+                          <FaDesktop className={iconInactive} />
+                        </Button>
+                      )}
+                      {devices.length > 1 && (
+                        <Button
+                          variant={"ghost"}
+                          className="px-2"
+                          title={devices[1].getName()}
+                          onClick={() => handleDevice(devices[1]?.id, select)}
+                        >
+                          <FaTabletScreenButton className={iconInactive} />
+                        </Button>
+                      )}
+                      {devices.length > 2 && (
+                        <Button
+                          variant={"ghost"}
+                          className="px-2"
+                          title={devices[2].getName()}
+                          onClick={() => handleDevice(devices[2]?.id, select)}
+                        >
+                          <FaMobileAlt className={iconInactive} />
+                        </Button>
+                      )}
+                      {devices.length > 3 && (
+                        <Button
+                          variant={"ghost"}
+                          className="px-2"
+                          title={devices[3].getName()}
+                          onClick={() => handleDevice(devices[3]?.id, select)}
+                        >
+                          <BiMobileLandscape className={iconInactive} />
+                        </Button>
+                      )}
+                    </div>
+                  );
+                }}
+              </DevicesProvider>
+            </div>
+            <Canvas className="bg-slate-100 p-2 2xl:p-4" />
+          </section>
+          <section className="w-56 bg-slate-50 border-l">
+            <BlocksProvider>
+              {(props) => <CustomBlockManager {...props} />}
+            </BlocksProvider>
+          </section>
         </div>
       </GjsEditor>
-    </>
+    </div>
   );
 };
