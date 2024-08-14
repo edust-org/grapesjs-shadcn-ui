@@ -1,15 +1,11 @@
 import grapesjs, { Editor } from "grapesjs";
-import GjsEditor, {
-  BlocksProvider,
-  Canvas,
-  DevicesProvider,
-} from "@grapesjs/react";
+import GjsEditor, { Canvas, DevicesProvider } from "@grapesjs/react";
 import { Button } from "../components/ui/button";
 import { FaDesktop, FaMobileAlt } from "react-icons/fa";
 import { FaTabletScreenButton } from "react-icons/fa6";
 import { BiMobileLandscape } from "react-icons/bi";
-import CustomBlockManager from "./custom-block-manager";
 import gsPluginBlocksBasic from "grapesjs-blocks-basic";
+import { RightPanel } from "./right-panel";
 
 export const Grapesjs = () => {
   const onEditor = async (editor: Editor) => {
@@ -117,10 +113,8 @@ export const Grapesjs = () => {
             </div>
             <Canvas className="bg-slate-100 p-2 2xl:p-4" />
           </section>
-          <section className="w-56 bg-slate-50 border-l">
-            <BlocksProvider>
-              {(props) => <CustomBlockManager {...props} />}
-            </BlocksProvider>
+          <section className="w-60 bg-slate-50 border-l">
+            <RightPanel />
           </section>
         </div>
       </GjsEditor>
