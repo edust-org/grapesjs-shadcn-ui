@@ -21,9 +21,9 @@ export const RightPanel = () => {
         </StylesProvider>
       </>
 
-      <LayersProvider>
+      {/* <LayersProvider>
         {(props) => <CustomLayerManager {...props} />}
-      </LayersProvider>
+      </LayersProvider> */}
       <BlocksProvider>
         {(props) => <CustomBlockManager {...props} />}
       </BlocksProvider>
