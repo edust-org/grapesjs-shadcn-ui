@@ -5,6 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../../components/ui/accordion";
+import StylePropertyField from "./style-property-field";
 
 export default function CustomStyleManager({
   sectors,
@@ -17,8 +18,7 @@ export default function CustomStyleManager({
             <AccordionTrigger> {sector.getName()}</AccordionTrigger>
             <AccordionContent>
               {sector.getProperties().map((prop) => (
-                // <StylePropertyField key={prop.getId()} prop={prop} />
-                <div></div>
+                <StylePropertyField key={prop.getId()} prop={prop} />
               ))}
             </AccordionContent>
           </AccordionItem>
