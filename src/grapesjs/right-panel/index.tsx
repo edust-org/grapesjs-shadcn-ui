@@ -71,7 +71,7 @@ export const RightPanel = () => {
         </TabsContent>
         <TabsContent value="pages">
           <PagesProvider>
-          {(props) => <CustomPageManager {...props} />}
+            {(props) => <CustomPageManager {...props} />}
           </PagesProvider>
         </TabsContent>
       </Tabs>
