@@ -18,6 +18,8 @@ import {
   SelectValue,
 } from "../../components/ui/select";
 import { Button } from "../../components/ui/button";
+import { useState } from "react";
+import { Input } from "../../components/ui/input";
 
 const FormSchema = z.object({
   state: z
@@ -45,6 +47,9 @@ export default function CustomSelectorManager({
   function onSubmit(data: z.infer<typeof FormSchema>) {
     console.log(data);
   }
+
+  const [isShowInput, setIsShowInput] = useState(false);
+
   return (
     <div className="gjs-custom-selector-manager p-2 flex flex-col gap-2 text-left">
       <div className="flex items-center">
@@ -93,18 +98,32 @@ export default function CustomSelectorManager({
         }
       >
         {targetStr ? (
-          <Button
-            type="button"
-            onClick={() => {
-              const next = selectors.length + 1;
-              console.log(selectors);
-              addSelector({ name: `new-${next}`, label: `New ${next}` });
-            }}
-            className={"border rounded h-6 w-6"}
-            size="icon"
-          >
-            <FaPlus />
-          </Button>
+          <>
+            {isShowInput ? (
+              <Input
+                placeholder="Custom class"
+                onKeyDown={(e) => {
+                  if (e.key == "Enter") {
+                    addSelector({
+                      name: e?.target?.value,
+                      label: e?.target?.value,
+                    });
+                    setIsShowInput(false);
+                  }
+                }}
+                onBlur={() => setIsShowInput(false)}
+              />
+            ) : (
+              <Button
+                type="button"
+                onClick={() => setIsShowInput(true)}
+                className={"border rounded h-6 w-6"}
+                size="icon"
+              >
+                <FaPlus />
+              </Button>
+            )}
+          </>
         ) : (
           <div className="opacity-70">Select a component</div>
         )}
