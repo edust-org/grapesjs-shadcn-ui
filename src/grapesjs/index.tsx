@@ -6,47 +6,12 @@ import options from "./options";
 
 import gsPluginBlocksBasic from "grapesjs-blocks-basic";
 import gsPluginTuiImageEditor from "grapesjs-tui-image-editor";
+import { default as customOnEditor } from "./on-editor";
+
+// Define a custom component type
 
 export const Grapesjs = () => {
-  const onEditor = async (editor: Editor) => {
-    // Must add this reference
-
-    // Fetch the page content on load
-    /*
-    const data = JSON.parse("{}");
-    editor.setComponents(data.html);
-    editor.setStyle(data.css);
-    */
-
-    // Add a save button to the editor
-    editor.Commands.add("save-db", {
-      run: async () => {
-        const content = JSON.stringify({
-          html: editor.getHtml(),
-          css: editor.getCss(),
-        });
-        console.log(content);
-      },
-    });
-
-    // Canvas Detect
-    /*
-    const onChange = () => {
-      console.log("Canvas changed");
-      const content = JSON.stringify({
-        html: editor.getHtml(),
-        css: editor.getCss(),
-      });
-      console.log(content);
-    };
-
-    editor.on("component:add", onChange);
-    editor.on("component:remove", onChange);
-    editor.on("component:update", onChange);
-    editor.on("style:update", onChange);
-    editor.on("component:change", onChange);*/
-    
-  };
+  const onEditor = async (editor: Editor) => customOnEditor(editor);
 
   return (
     <div>
@@ -61,6 +26,7 @@ export const Grapesjs = () => {
         // GrapesJS init options
         options={options}
         onEditor={onEditor}
+        // Add new plugins
         plugins={[gsPluginBlocksBasic, gsPluginTuiImageEditor]}
       >
         <div className="flex h-screen overflow-hidden">

@@ -3,6 +3,9 @@ const options = {
   storageManager: false,
   undoManager: { trackSelection: false },
   selectorManager: { componentFirst: true },
+
+  // If you enable multiple pages options then you need this
+  /*
   projectData: {
     assets: [
       "https://via.placeholder.com/350x250/78c5d6/fff",
@@ -14,9 +17,9 @@ const options = {
     pages: [
       {
         name: "Home page",
-        component: `<h1>GrapesJS React Custom UI with ShadcnUI</h1>`,
+        component: `<h1>GrapesJS React Custom UI with ShadcnUIx</h1>`,
       },
     ],
-  },
+  }, */
 };
 export default options;
