@@ -1,7 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
+import { Input } from "../../components/ui/input";
 
-const ColorInput = ({ placeholder, value, onChange, valueWithDef, onColorChange }) => {
-  const [color, setColor] = useState(valueWithDef || '#ffffff');
+const ColorInput = ({
+  placeholder,
+  value,
+  onChange,
+  valueWithDef,
+  onColorChange,
+}) => {
+  const [color, setColor] = useState(valueWithDef || "#ffffff");
 
   // Update local color state when valueWithDef changes
   useEffect(() => {
@@ -15,47 +22,28 @@ const ColorInput = ({ placeholder, value, onChange, valueWithDef, onColorChange 
   };
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center' }} className='w-full'>
-      <input
-        type="text"
-        placeholder={placeholder}
-        value={value}
-        onChange={onChange}
-        style={{ flex: 1 }}
-        className='w-full'
-      />
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          marginLeft: '8px',
-          position: 'relative',
-        }}
-      >
+    <div className="w-full flex items-center ">
+      <div className="flex items-center gap-1">
         <div
+          className={`w-9 h-9 border cursor-pointer relative rounded`}
           style={{
-            width: '30px',
-            height: '30px',
-            border: '1px solid #ccc',
-            borderRadius: '4px',
             backgroundColor: color,
-            cursor: 'pointer',
-            position: 'relative',
           }}
         >
-          <input
+          <Input
             type="color"
             value={valueWithDef}
             onChange={handleColorChange}
-            style={{
-              position: 'absolute',
-              width: '100%',
-              height: '100%',
-              opacity: 0,
-              cursor: 'pointer',
-            }}
+            className="absolute w-full h-full opacity-0 cursor-pointer"
           />
         </div>
+        <Input
+          type="text"
+          placeholder={placeholder}
+          value={value}
+          onChange={onChange}
+          className="w-full flex-1"
+        />
       </div>
     </div>
   );

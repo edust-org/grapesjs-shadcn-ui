@@ -11,7 +11,7 @@ export default function CustomStyleManager({
   sectors,
 }: Omit<StylesResultProps, "Container">) {
   return (
-    <div className="gjs-custom-style-manager text-left">
+    <div className="gjs-custom-style-manager text-left p-2">
       <Accordion type="single" collapsible>
         {sectors.map((sector) => (
           <AccordionItem value={sector.getId()} key={sector.getId()}>

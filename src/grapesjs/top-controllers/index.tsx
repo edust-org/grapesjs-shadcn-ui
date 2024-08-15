@@ -12,53 +12,79 @@ export const TopControllers = () => {
 
   return (
     <>
-      <div className="border-b bg-slate-50 flex items-center justify-between">
+      <div className="border-b bg-muted flex items-center justify-between">
         <DevicesProvider>
           {({ devices, select, selected }) => {
             const iconInactive = `text-lg text-slate-500`;
             const iconActive = `text-lg text-slate-900`;
             // TODO: will implement icon active or not
-
+            console.log(selected);
             return (
               <div>
                 {devices.length > 0 && (
                   <Button
                     variant={"ghost"}
-                    className="px-2"
+                    className={`my-1 px-2 h-8 ${
+                      selected == "desktop" && "bg-white"
+                    }`}
                     title={devices[0].getName()}
                     onClick={() => handleDevice(devices[0]?.id, select)}
                   >
-                    <FaDesktop className={iconInactive} />
+                    <FaDesktop
+                      className={
+                        selected == "desktop" ? iconActive : iconInactive
+                      }
+                    />
                   </Button>
                 )}
                 {devices.length > 1 && (
                   <Button
                     variant={"ghost"}
-                    className="px-2"
+                    className={`my-1 px-2 h-8 ${
+                      selected == "tablet" && "bg-white"
+                    }`}
                     title={devices[1].getName()}
                     onClick={() => handleDevice(devices[1]?.id, select)}
                   >
-                    <FaTabletScreenButton className={iconInactive} />
+                    <FaTabletScreenButton
+                      className={
+                        selected == "tablet" ? iconActive : iconInactive
+                      }
+                    />
                   </Button>
                 )}
                 {devices.length > 2 && (
                   <Button
                     variant={"ghost"}
-                    className="px-2"
+                    className={`my-1 px-2 h-8 ${
+                      selected == "mobileLandscape" && "bg-white"
+                    }`}
                     title={devices[2].getName()}
                     onClick={() => handleDevice(devices[2]?.id, select)}
                   >
-                    <FaMobileAlt className={iconInactive} />
+                    <FaMobileAlt
+                      className={
+                        selected == "mobileLandscape"
+                          ? iconActive
+                          : iconInactive
+                      }
+                    />
                   </Button>
                 )}
                 {devices.length > 3 && (
                   <Button
                     variant={"ghost"}
-                    className="px-2"
+                    className={`my-1 px-2 h-8 ${
+                      selected == "mobilePortrait" && "bg-white"
+                    }`}
                     title={devices[3].getName()}
                     onClick={() => handleDevice(devices[3]?.id, select)}
                   >
-                    <BiMobileLandscape className={iconInactive} />
+                    <BiMobileLandscape
+                      className={
+                        selected == "mobilePortrait" ? iconActive : iconInactive
+                      }
+                    />
                   </Button>
                 )}
               </div>

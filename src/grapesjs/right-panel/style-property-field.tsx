@@ -256,7 +256,7 @@ export default function StylePropertyField({
       {...rest}
       className={`mb-3 px-1 ${prop.isFull() ? "w-full" : "w-1/2"}`}
     >
-      <div className={`flex mb-2 items-center ${canClear && "text-sky-300"}`}>
+      <div className={`flex mb-2 items-center ${canClear && "text-slate-500"}`}>
         <div className="flex-grow capitalize">{prop.getLabel()}</div>
         {canClear && (
           <button onClick={() => prop.clear()}>
@@ -266,7 +266,7 @@ export default function StylePropertyField({
         {type === "stack" && (
           <Button
             size="icon"
-            className="!ml-2"
+            className="!ml-2 h-6 w-6"
             onClick={() => (prop as PropertyStack).addLayer({}, { at: 0 })}
           >
             <FaPlus />
