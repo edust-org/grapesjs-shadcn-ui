@@ -6,17 +6,14 @@ export default async (editor: Editor) => {
       console.error("Editor is not initialized");
       return;
     }
-
-    const blockManager = editor.BlockManager;
-    blockManager.add("h1-block", {
-      label: "Heading",
-      content: "<h1>Put your title here</h1>",
-      category: "Custom",
-      attributes: {
-        title: "Insert h1 block",
+    editor.Commands.add("save-db", {
+      run: async () => {
+        const content = JSON.stringify({
+          html: editor.getHtml(),
+          css: editor.getCss(),
+        });
+        console.log(content);
       },
-      media:
-        '<svg viewBox="0 0 24 24">\n<path fill="currentColor" d="M3.9,12C3.9,10.29 5.29,8.9 7,8.9H11V7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H11V15.1H7C5.29,15.1 3.9,13.71 3.9,12M8,13H16V11H8V13M17,7H13V8.9H17C18.71,8.9 20.1,10.29 20.1,12C20.1,13.71 18.71,15.1 17,15.1H13V17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7Z" />\n      </svg>',
     });
 
     editor.on("component:add", (e) => {

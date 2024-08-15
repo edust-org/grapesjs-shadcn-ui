@@ -7,6 +7,7 @@ import options from "./options";
 import gsPluginBlocksBasic from "grapesjs-blocks-basic";
 import gsPluginTuiImageEditor from "grapesjs-tui-image-editor";
 import { default as customOnEditor } from "./on-editor";
+import { CustomBlockPlugin } from "./custom-block-plugin";
 
 export const Grapesjs = () => {
   const onEditor = async (editor: Editor) => customOnEditor(editor);
@@ -25,7 +26,11 @@ export const Grapesjs = () => {
         options={options}
         onEditor={onEditor}
         // Add new plugins
-        plugins={[gsPluginBlocksBasic, gsPluginTuiImageEditor]}
+        plugins={[
+          gsPluginBlocksBasic,
+          gsPluginTuiImageEditor,
+          CustomBlockPlugin,
+        ]}
       >
         <div className="flex h-screen overflow-hidden">
           <section className="flex-1 flex flex-col">
