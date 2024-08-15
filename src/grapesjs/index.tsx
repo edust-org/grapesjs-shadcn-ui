@@ -8,8 +8,6 @@ import gsPluginBlocksBasic from "grapesjs-blocks-basic";
 import gsPluginTuiImageEditor from "grapesjs-tui-image-editor";
 import { default as customOnEditor } from "./on-editor";
 
-// Define a custom component type
-
 export const Grapesjs = () => {
   const onEditor = async (editor: Editor) => customOnEditor(editor);
 
