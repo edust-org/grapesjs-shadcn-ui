@@ -20,8 +20,8 @@ import {
 import { MdDashboardCustomize } from "react-icons/md";
 import { FaLayerGroup, FaPaintBrush } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";
-import { RiFileCopy2Line } from "react-icons/ri";
-import CustomPageManager from "./custom-page-manager";
+// import { RiFileCopy2Line } from "react-icons/ri";
+// import CustomPageManager from "./custom-page-manager";
 
 export const RightPanel = () => {
   return (
@@ -40,9 +40,9 @@ export const RightPanel = () => {
           <TabsTrigger value="blocks">
             <MdDashboardCustomize className="text-lg" />
           </TabsTrigger>
-          <TabsTrigger value="pages">
+          {/* <TabsTrigger value="pages">
             <RiFileCopy2Line className="text-lg" />
-          </TabsTrigger>
+          </TabsTrigger> */}
         </TabsList>
         <TabsContent value="selectors">
           <>
@@ -69,11 +69,11 @@ export const RightPanel = () => {
             {(props) => <CustomBlockManager {...props} />}
           </BlocksProvider>
         </TabsContent>
-        <TabsContent value="pages">
+        {/* <TabsContent value="pages">
           <PagesProvider>
             {(props) => <CustomPageManager {...props} />}
           </PagesProvider>
-        </TabsContent>
+        </TabsContent> */}
       </Tabs>
     </>
   );

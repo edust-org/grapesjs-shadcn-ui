@@ -2,8 +2,8 @@ import { useEffect, useMemo, useState } from "react";
 import { useEditor } from "@grapesjs/react";
 import { SlSizeFullscreen } from "react-icons/sl";
 import { Button } from "../../components/ui/button";
-import { FaCode, FaRedo, FaUndo } from "react-icons/fa";
-import { MdBorderClear } from "react-icons/md";
+import { FaCode, FaRedo, FaSave, FaUndo } from "react-icons/fa";
+import { MdBorderClear, MdDelete } from "react-icons/md";
 
 export const RightButtons = () => {
   const editor = useEditor();
@@ -26,6 +26,10 @@ export const RightButtons = () => {
         icon: <FaCode />,
       },
       {
+        id: "core:canvas-clear",
+        icon: <MdDelete />,
+      },
+      {
         id: "core:undo",
         icon: <FaUndo />,
         disabled: () => !UndoManager.hasUndo(),
@@ -34,6 +38,10 @@ export const RightButtons = () => {
         id: "core:redo",
         icon: <FaRedo />,
         disabled: () => !UndoManager.hasRedo(),
+      },
+      {
+        id: "save-db",
+        icon: <FaSave />,
       },
     ],
     [UndoManager]
@@ -55,20 +63,26 @@ export const RightButtons = () => {
     };
   }, [cmdButtons, editor]);
 
+  const handleButtons = ({ Commands, id, options }) => {
+    if (id == "core:canvas-clear") {
+      const isConfirm = confirm("Are you sure?");
+
+      if (!isConfirm) return;
+    }
+
+    Commands.isActive(id) ? Commands.stop(id) : Commands.run(id, options);
+  };
+
   return (
     <>
-      <div className="flex gap-3 ml-auto px-2">
+      <div className="flex gap-3 ml-auto px-2 panel__top" id="panel-top">
         {cmdButtons.map(({ id, icon, disabled, options = {} }) => (
           <Button
             key={id}
             type="button"
-            variant={"ghost"}
-            className="px-2 text-lg"
-            onClick={() =>
-              Commands.isActive(id)
-                ? Commands.stop(id)
-                : Commands.run(id, options)
-            }
+            variant={Commands.isActive(id) ? "default" : "ghost"}
+            className={`px-2 text-lg h-9`}
+            onClick={() => handleButtons({ Commands, id, options })}
             disabled={disabled?.()}
           >
             {icon}

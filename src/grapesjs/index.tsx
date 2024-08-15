@@ -20,15 +20,22 @@ export const Grapesjs = () => {
     //   attributes: { title: "Save" },
     // });
     // Define the save command
-    // editor.Commands.add("save-db", {
-    //   run: async () => {
-    //     const content = JSON.stringify({
-    //       html: editor.getHtml(),
-    //       css: editor.getCss(),
-    //     });
-    //     console.log(content);
-    //   },
-    // });
+    editor.Panels.addButton("options", {
+      id: "save-db",
+      className: "fa fa-floppy-o",
+      command: "save-db",
+      attributes: { title: "Save" },
+    });
+
+    editor.Commands.add("save-db", {
+      run: async () => {
+        const content = JSON.stringify({
+          html: editor.getHtml(),
+          css: editor.getCss(),
+        });
+        console.log(content);
+      },
+    });
   };
 
   return (
