@@ -99,17 +99,16 @@ export default function StylePropertyField({
       {
         const selectProp = prop as PropertySelect;
         inputToRender = (
-          <Select value={value} onValueChange={onChange}>
-            {/* <SelectTrigger className="w-[180px]">
+          <Select value={value} onValueChange={handleChange}>
+            <SelectTrigger className="w-[180px]">
               <SelectValue placeholder="Select a fruit" />
-            </SelectTrigger> */}
+            </SelectTrigger>
             <SelectContent>
               <SelectGroup>
                 {selectProp.getOptions().map((option) => {
                   const optionId = selectProp.getOptionId(option) || "outside";
                   const optionLabel =
                     selectProp.getOptionLabel(option) || "outside";
-
                   return (
                     <SelectItem key={optionId} value={optionId}>
                       {optionLabel}
@@ -138,7 +137,7 @@ export default function StylePropertyField({
     case "slider":
       {
         const sliderProp = prop as PropertySlider;
-        
+
         inputToRender = (
           <Slider
             value={[parseFloat(value)]}

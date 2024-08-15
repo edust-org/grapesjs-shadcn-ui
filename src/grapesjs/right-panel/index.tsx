@@ -3,11 +3,13 @@ import {
   LayersProvider,
   SelectorsProvider,
   StylesProvider,
+  TraitsProvider,
 } from "@grapesjs/react";
 import CustomBlockManager from "./custom-block-manager";
 import CustomLayerManager from "./custom-layer-manager";
 import CustomSelectorManager from "./custom-selector-manager";
 import CustomStyleManager from "./custom-style-manager";
+import CustomTraitManager from "./custom-trait-manager";
 
 export const RightPanel = () => {
   return (
@@ -20,6 +22,10 @@ export const RightPanel = () => {
           {(props) => <CustomStyleManager {...props} />}
         </StylesProvider>
       </>
+
+      <TraitsProvider>
+            {(props) => <CustomTraitManager {...props} />}
+          </TraitsProvider>
 
       {/* <LayersProvider>
         {(props) => <CustomLayerManager {...props} />}
