@@ -28,6 +28,24 @@ export const Grapesjs = () => {
         console.log(content);
       },
     });
+
+    // Canvas Detect
+    /*
+    const onChange = () => {
+      console.log("Canvas changed");
+      const content = JSON.stringify({
+        html: editor.getHtml(),
+        css: editor.getCss(),
+      });
+      console.log(content);
+    };
+
+    editor.on("component:add", onChange);
+    editor.on("component:remove", onChange);
+    editor.on("component:update", onChange);
+    editor.on("style:update", onChange);
+    editor.on("component:change", onChange);*/
+    
   };
 
   return (
