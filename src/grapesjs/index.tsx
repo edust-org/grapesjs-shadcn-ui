@@ -51,6 +51,21 @@ export const Grapesjs = () => {
         options={{
           height: "100vh",
           storageManager: false,
+          projectData: {
+            assets: [
+              "https://via.placeholder.com/350x250/78c5d6/fff",
+              "https://via.placeholder.com/350x250/459ba8/fff",
+              "https://via.placeholder.com/350x250/79c267/fff",
+              "https://via.placeholder.com/350x250/c5d647/fff",
+              "https://via.placeholder.com/350x250/f28c33/fff",
+            ],
+            pages: [
+              {
+                name: "Home page",
+                component: `<h1>GrapesJS React Custom UI with ShadcnUI</h1>`,
+              },
+            ],
+          },
         }}
         onEditor={onEditor}
         plugins={[gsPluginBlocksBasic]}
@@ -113,7 +128,7 @@ export const Grapesjs = () => {
             </div>
             <Canvas className="bg-slate-100 p-2 2xl:p-4" />
           </section>
-          <section className="w-60 bg-slate-50 border-l overflow-y-auto">
+          <section className="w-60 bg-slate-50 border-l overflow-y-auto overflow-x-hidden">
             <RightPanel />
           </section>
         </div>
