@@ -3,7 +3,7 @@ const options = {
   storageManager: false,
   undoManager: { trackSelection: false },
   selectorManager: { componentFirst: true },
-
+  panels: { defaults: [] }, // Avoid default panels
   // If you enable multiple pages options then you need this
   /*
   projectData: {
