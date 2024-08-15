@@ -14,16 +14,20 @@ import { IoIosClose, IoMdArrowDropupCircle } from "react-icons/io";
 import { FaPlus } from "react-icons/fa";
 
 import { Button } from "../../components/ui/button";
-
-import FormControl from "@mui/material/FormControl";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import InputAdornment from "@mui/material/InputAdornment";
-import MenuItem from "@mui/material/MenuItem";
-import Radio from "@mui/material/Radio";
-import RadioGroup from "@mui/material/RadioGroup";
-import Select from "@mui/material/Select";
-import Slider from "@mui/material/Slider";
-import TextField from "@mui/material/TextField";
+import { Input } from "../../components/ui/input";
+import ColorInput from "./color-input";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "../../components/ui/select";
+import { RadioGroup, RadioGroupItem } from "../../components/ui/radio-group";
+import { Label } from "../../components/ui/label";
+import { Slider } from "../../components/ui/slider";
 
 interface StylePropertyFieldProps extends React.HTMLProps<HTMLDivElement> {
   prop: Property;
@@ -64,13 +68,7 @@ export default function StylePropertyField({
   const valueWithDef = hasValue ? value : defValue;
 
   let inputToRender = (
-    <TextField
-      placeholder={defValue}
-      value={valueString}
-      onChange={onChange}
-      size="small"
-      fullWidth
-    />
+    <Input placeholder={defValue} value={valueString} onChange={onChange} />
   );
 
   switch (type) {
@@ -78,14 +76,20 @@ export default function StylePropertyField({
       {
         const radioProp = prop as PropertyRadio;
         inputToRender = (
-          <RadioGroup value={value} onChange={onChange} row>
+          <RadioGroup defaultValue={value} onChange={onChange}>
             {radioProp.getOptions().map((option) => (
-              <FormControlLabel
+              <div
                 key={radioProp.getOptionId(option)}
-                value={radioProp.getOptionId(option)}
-                label={radioProp.getOptionLabel(option)}
-                control={<Radio size="small" />}
-              />
+                className="flex items-center space-x-2"
+              >
+                <RadioGroupItem
+                  value={radioProp.getOptionId(option)}
+                  id={radioProp.getOptionId(option)}
+                />
+                <Label htmlFor={radioProp.getOptionId(option)}>
+                  {radioProp.getOptionLabel(option)}
+                </Label>
+              </div>
             ))}
           </RadioGroup>
         );
@@ -95,47 +99,38 @@ export default function StylePropertyField({
       {
         const selectProp = prop as PropertySelect;
         inputToRender = (
-          <FormControl fullWidth size="small">
-            <Select value={value} onChange={onChange}>
-              {selectProp.getOptions().map((option) => (
-                <MenuItem
-                  key={selectProp.getOptionId(option)}
-                  value={selectProp.getOptionId(option)}
-                >
-                  {selectProp.getOptionLabel(option)}
-                </MenuItem>
-              ))}
-            </Select>
-          </FormControl>
+          <Select value={value} onValueChange={onChange}>
+            {/* <SelectTrigger className="w-[180px]">
+              <SelectValue placeholder="Select a fruit" />
+            </SelectTrigger> */}
+            <SelectContent>
+              <SelectGroup>
+                {selectProp.getOptions().map((option) => {
+                  const optionId = selectProp.getOptionId(option) || "outside";
+                  const optionLabel =
+                    selectProp.getOptionLabel(option) || "outside";
+
+                  return (
+                    <SelectItem key={optionId} value={optionId}>
+                      {optionLabel}
+                    </SelectItem>
+                  );
+                })}
+              </SelectGroup>
+            </SelectContent>
+          </Select>
         );
       }
       break;
     case "color":
       {
         inputToRender = (
-          <TextField
-            fullWidth
+          <ColorInput
             placeholder={defValue}
             value={valueString}
             onChange={onChange}
-            size="small"
-            InputProps={{
-              startAdornment: (
-                <InputAdornment position="start">
-                  <div
-                    className={`w-[15px] h-[15px] rounded border border-slate-500`}
-                    style={{ backgroundColor: valueWithDef }}
-                  >
-                    <input
-                      type="color"
-                      className="w-[15px] h-[15px] cursor-pointer opacity-0"
-                      value={valueWithDef}
-                      onChange={(ev) => handleChange(ev.target.value)}
-                    />
-                  </div>
-                </InputAdornment>
-              ),
-            }}
+            valueWithDef={valueWithDef}
+            onColorChange={(value) => handleChange(value)}
           />
         );
       }
@@ -143,15 +138,16 @@ export default function StylePropertyField({
     case "slider":
       {
         const sliderProp = prop as PropertySlider;
+        
         inputToRender = (
           <Slider
-            size="small"
-            value={parseFloat(value)}
+            value={[parseFloat(value)]}
             min={sliderProp.getMin()}
             max={sliderProp.getMax()}
             step={sliderProp.getStep()}
-            onChange={onChange}
-            valueLabelDisplay="auto"
+            onValueChange={(e) => {
+              handleChange(e[0].toString());
+            }}
           />
         );
       }
