@@ -1,4 +1,10 @@
 import { BlocksResultProps } from "@grapesjs/react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../../components/ui/accordion";
 
 export type CustomBlockManagerProps = Pick<
   BlocksResultProps,
@@ -12,38 +18,41 @@ export default function CustomBlockManager({
 }: CustomBlockManagerProps) {
   return (
     <div className="gjs-custom-block-manager text-left">
-      {Array.from(mapCategoryBlocks).map(([category, blocks]) => (
-        <div key={category}>
-          <div className={"py-2 px-4 border-y border-slate-500"}>
-            {/* Block name */}
-            {category} 
-          </div>
-          <div className="grid grid-cols-2 gap-2 p-2">
-            {blocks.map((block) => (
-              <div
-                key={block.getId()}
-                draggable
-                className={
-                  "flex flex-col items-center border rounded cursor-pointer py-2 px-5 transition-colors border-slate-500"
-                }
-                onDragStart={(ev) => dragStart(block, ev.nativeEvent)}
-                onDragEnd={() => dragStop(false)}
-              >
-                <div
-                  className="h-10 w-10"
-                  dangerouslySetInnerHTML={{ __html: block.getMedia()! }}
-                />
-                <div
-                  className="text-sm text-center w-full"
-                  title={block.getLabel()}
-                >
-                  {block.getLabel()}
-                </div>
+      <Accordion type="multiple" className="w-full" defaultValue={["Basic"]}>
+        {Array.from(mapCategoryBlocks).map(([category, blocks]) => (
+          <AccordionItem key={category} value={category}>
+            <AccordionTrigger className="px-2 bg-slate-100 hover:no-underline	">
+              {category}
+            </AccordionTrigger>
+            <AccordionContent className="bg-white">
+              <div className="grid grid-cols-2 gap-2 p-2">
+                {blocks.map((block) => (
+                  <div
+                    key={block.getId()}
+                    draggable
+                    className={
+                      "flex flex-col items-center border rounded cursor-pointer py-2 px-1 transition-colors border-slate-100 shadow bg-slate-50 hover:bg-white"
+                    }
+                    onDragStart={(ev) => dragStart(block, ev.nativeEvent)}
+                    onDragEnd={() => dragStop(false)}
+                  >
+                    <div
+                      className="h-6 w-6"
+                      dangerouslySetInnerHTML={{ __html: block.getMedia()! }}
+                    />
+                    <div
+                      className="text-sm text-center w-full"
+                      title={block.getLabel()}
+                    >
+                      {block.getLabel()}
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-        </div>
-      ))}
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
     </div>
   );
 }
