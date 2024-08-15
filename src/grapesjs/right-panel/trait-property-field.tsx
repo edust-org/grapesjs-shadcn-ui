@@ -46,11 +46,7 @@ export default function TraitPropertyField({
   const valueWithDef = typeof value !== "undefined" ? value : defValue;
 
   let inputToRender = (
-    <Input
-      placeholder={defValue}
-      value={value}
-      onChange={onChange}
-    />
+    <Input placeholder={defValue} value={value} onChange={onChange} />
   );
 
   switch (type) {
@@ -66,8 +62,6 @@ export default function TraitPropertyField({
                 {trait.getOptions().map((option) => {
                   const optionId = trait.getOptionId(option) || "outside";
                   const optionLabel = trait.getOptionLabel(option) || "outside";
-
-                  console.log({ option });
                   return (
                     <SelectItem key={optionId} value={optionId}>
                       {optionLabel}
@@ -98,10 +92,7 @@ export default function TraitPropertyField({
         inputToRender = (
           <Checkbox
             checked={value}
-            onCheckedChange={(ev) => {
-              console.log(ev);
-              trait.setValue(ev.target.checked);
-            }}
+            onCheckedChange={(ev) => trait.setValue(ev)}
           />
         );
       }

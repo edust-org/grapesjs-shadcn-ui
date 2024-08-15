@@ -45,7 +45,7 @@ export default function CustomSelectorManager({
   });
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
-    console.log(data);
+    // console.log(data);
   }
 
   const [isShowInput, setIsShowInput] = useState(false);
