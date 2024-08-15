@@ -17,6 +17,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../../components/ui/select";
+import { Button } from "../../components/ui/button";
 
 const FormSchema = z.object({
   state: z
@@ -35,11 +36,6 @@ export default function CustomSelectorManager({
   addSelector,
   removeSelector,
 }: Omit<SelectorsResultProps, "Container">) {
-  const addNewSelector = () => {
-    const next = selectors.length + 1;
-    addSelector({ name: `new-${next}`, label: `New ${next}` });
-  };
-
   const targetStr = targets.join(", ");
 
   const form = useForm<z.infer<typeof FormSchema>>({
@@ -56,7 +52,6 @@ export default function CustomSelectorManager({
         <Form {...form}>
           <form
             onChange={(e) => {
-              console.log(e.target.value);
               setState(e.target.value);
             }}
             onSubmit={form.handleSubmit(onSubmit)}
@@ -90,26 +85,33 @@ export default function CustomSelectorManager({
           </form>
         </Form>
       </div>
+
+      {/* start Selectors List or classes */}
       <div
         className={
-          "flex items-center gap-2 flex-wrap p-2 bg-black/30 border rounded min-h-[45px] border-slate-500"
+          "flex items-center gap-2 flex-wrap p-2 bg-slate-200 border rounded min-h-[45px] border-slate-500"
         }
       >
         {targetStr ? (
-          <button
+          <Button
             type="button"
-            onClick={addNewSelector}
-            className={"border rounded px-2 py-1"}
+            onClick={() => {
+              const next = selectors.length + 1;
+              console.log(selectors);
+              addSelector({ name: `new-${next}`, label: `New ${next}` });
+            }}
+            className={"border rounded h-6 w-6"}
+            size="icon"
           >
             <FaPlus />
-          </button>
+          </Button>
         ) : (
           <div className="opacity-70">Select a component</div>
         )}
         {selectors.map((selector) => (
           <div
             key={selector.toString()}
-            className="px-2 py-1 flex items-center gap-1 whitespace-nowrap bg-sky-500 rounded"
+            className="px-2 py-1 flex items-center gap-1 whitespace-nowrap bg-slate-500 text-white rounded"
           >
             <div>{selector.getLabel()}</div>
             <button type="button" onClick={() => removeSelector(selector)}>
@@ -118,6 +120,8 @@ export default function CustomSelectorManager({
           </div>
         ))}
       </div>
+      {/* end Selectors List or classes */}
+
       <div>
         Selected: <span className="opacity-70">{targetStr || "None"}</span>
       </div>

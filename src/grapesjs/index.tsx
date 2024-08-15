@@ -1,32 +1,24 @@
 import grapesjs, { Editor } from "grapesjs";
 import GjsEditor, { Canvas } from "@grapesjs/react";
-import gsPluginBlocksBasic from "grapesjs-blocks-basic";
 import { RightPanel } from "./right-panel";
 import { TopControllers } from "./top-controllers";
 import options from "./options";
 
+import gsPluginBlocksBasic from "grapesjs-blocks-basic";
+import gsPluginTuiImageEditor from "grapesjs-tui-image-editor";
+
 export const Grapesjs = () => {
   const onEditor = async (editor: Editor) => {
     // Must add this reference
-    // Fetch the page content on load
-    // const data = JSON.parse("{}");
-    // editor.setComponents(data.html);
-    // editor.setStyle(data.css);
-    // Add a save button to the editor
-    // editor.Panels.addButton("options", {
-    //   id: "save-db",
-    //   className: "fa fa-floppy-o",
-    //   command: "save-db",
-    //   attributes: { title: "Save" },
-    // });
-    // Define the save command
-    editor.Panels.addButton("options", {
-      id: "save-db",
-      className: "fa fa-floppy-o",
-      command: "save-db",
-      attributes: { title: "Save" },
-    });
 
+    // Fetch the page content on load
+    /*
+    const data = JSON.parse("{}");
+    editor.setComponents(data.html);
+    editor.setStyle(data.css);
+    */
+
+    // Add a save button to the editor
     editor.Commands.add("save-db", {
       run: async () => {
         const content = JSON.stringify({
@@ -51,7 +43,7 @@ export const Grapesjs = () => {
         // GrapesJS init options
         options={options}
         onEditor={onEditor}
-        plugins={[gsPluginBlocksBasic]}
+        plugins={[gsPluginBlocksBasic, gsPluginTuiImageEditor]}
       >
         <div className="flex h-screen overflow-hidden">
           <section className="flex-1 flex flex-col">

@@ -18,7 +18,6 @@ export const TopControllers = () => {
             const iconInactive = `text-lg text-slate-500`;
             const iconActive = `text-lg text-slate-900`;
             // TODO: will implement icon active or not
-            console.log(selected);
             return (
               <div>
                 {devices.length > 0 && (

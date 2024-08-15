@@ -50,6 +50,9 @@ importers:
       grapesjs-blocks-basic:
         specifier: ^1.0.2
         version: 1.0.2
+      grapesjs-tui-image-editor:
+        specifier: ^1.0.2
+        version: 1.0.2
       lucide-react:
         specifier: ^0.418.0
         version: 0.418.0(react@18.3.1)
@@ -1291,6 +1294,9 @@ packages:
 
   grapesjs-blocks-basic@1.0.2:
     resolution: {integrity: sha512-SsPKf/CvQkZ+kABOsN01auAPHXh/2J20g0AWYF7fHR3Gw3TZLtdIxT1mk90Qzi76u/7sUYi3CTI+i3ZaTtXHRA==}
+
+  grapesjs-tui-image-editor@1.0.2:
+    resolution: {integrity: sha512-cnKSYzzQV8m5mdvVGhhO9aO5tmtOZLR1O+12z2LqnBcYCvA1eN7ecEYqHT7qpRVH8Q84Nj2mmCn+2t4TvrkI8g==}
 
   grapesjs@0.21.12:
     resolution: {integrity: sha512-BPB7sT+qWQIjpyS7nrUNEbWgvj/qvRwW0acj69PBExyd0iWkVwYV55LFB8qJore3pnuHVFZ5OkIwSPGI/mrOkA==}
@@ -2986,6 +2992,8 @@ snapshots:
       slash: 3.0.0
 
   grapesjs-blocks-basic@1.0.2: {}
+
+  grapesjs-tui-image-editor@1.0.2: {}
 
   grapesjs@0.21.12:
     dependencies:
