@@ -76,7 +76,7 @@ export default function StylePropertyField({
       {
         const radioProp = prop as PropertyRadio;
         inputToRender = (
-          <RadioGroup defaultValue={value} onChange={onChange}>
+          <RadioGroup defaultValue={value} onValueChange={handleChange}>
             {radioProp.getOptions().map((option) => (
               <div
                 key={radioProp.getOptionId(option)}

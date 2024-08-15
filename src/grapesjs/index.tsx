@@ -55,7 +55,7 @@ export const Grapesjs = () => {
         onEditor={onEditor}
         plugins={[gsPluginBlocksBasic]}
       >
-        <div className="flex h-full">
+        <div className="flex h-screen overflow-hidden">
           <section className="flex-1 flex flex-col">
             <div className="border-b bg-slate-50">
               <DevicesProvider>
@@ -113,7 +113,7 @@ export const Grapesjs = () => {
             </div>
             <Canvas className="bg-slate-100 p-2 2xl:p-4" />
           </section>
-          <section className="w-60 bg-slate-50 border-l">
+          <section className="w-60 bg-slate-50 border-l overflow-y-auto">
             <RightPanel />
           </section>
         </div>
