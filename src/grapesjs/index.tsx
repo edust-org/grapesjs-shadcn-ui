@@ -9,6 +9,7 @@ import gsPluginTuiImageEditor from "grapesjs-tui-image-editor";
 import { default as customOnEditor } from "./on-editor";
 import { CustomBlockPlugin } from "./custom-block-plugin";
 import { useRef } from "react";
+import { ScrollArea } from "../components/ui/scroll-area";
 
 export const Grapesjs = () => {
   const editorRef = useRef<Editor | null>(null);
@@ -48,9 +49,9 @@ export const Grapesjs = () => {
             <TopControllers />
             <Canvas className="bg-slate-200 p-2 2xl:p-4" />
           </section>
-          <section className="w-60 bg-slate-50 border-l overflow-y-auto overflow-x-hidden">
+          <ScrollArea className="w-60 bg-slate-50 border-l">
             <RightPanel />
-          </section>
+          </ScrollArea>
         </div>
       </GjsEditor>
     </div>

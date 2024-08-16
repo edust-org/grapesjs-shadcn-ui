@@ -13,6 +13,7 @@ export default async (editor: Editor) => {
       },
     });
 
+    /*
     editor.on("component:add", (e) => {
       console.log("component:add");
     });
@@ -28,6 +29,7 @@ export default async (editor: Editor) => {
     editor.on("component:change", (e) => {
       console.log("component:change");
     });
+    */
 
     // Loaded TailwindCSS
     editor.Canvas.getModel()["on"]("change:frames", (_m, frames) => {
