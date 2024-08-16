@@ -1,14 +1,14 @@
+import { useRef } from "react";
 import grapesjs, { Editor } from "grapesjs";
 import GjsEditor, { Canvas } from "@grapesjs/react";
+import gsPluginBlocksBasic from "grapesjs-blocks-basic";
+import gsPluginTuiImageEditor from "grapesjs-tui-image-editor";
+
 import { RightPanel } from "./right-panel";
 import { TopControllers } from "./top-controllers";
 import options from "./options";
-
-import gsPluginBlocksBasic from "grapesjs-blocks-basic";
-import gsPluginTuiImageEditor from "grapesjs-tui-image-editor";
 import { default as customOnEditor } from "./on-editor";
-import { CustomBlockPlugin } from "./custom-block-plugin";
-import { useRef } from "react";
+import plugins from "./plugins";
 import { ScrollArea } from "@/components/ui";
 
 export const GrapesjsUI = () => {
@@ -38,11 +38,7 @@ export const GrapesjsUI = () => {
         options={options(editorRef)}
         onEditor={onEditor}
         // Add new plugins
-        plugins={[
-          gsPluginBlocksBasic,
-          gsPluginTuiImageEditor,
-          CustomBlockPlugin,
-        ]}
+        plugins={[gsPluginBlocksBasic, gsPluginTuiImageEditor, ...plugins]}
       >
         <div className="flex h-screen overflow-hidden">
           <section className="flex-1 flex flex-col">
