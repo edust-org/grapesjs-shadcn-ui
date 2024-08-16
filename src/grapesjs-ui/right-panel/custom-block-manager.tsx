@@ -21,7 +21,7 @@ export default function CustomBlockManager({
       <Accordion type="multiple" className="w-full" defaultValue={["Basic"]}>
         {Array.from(mapCategoryBlocks).map(([category, blocks]) => (
           <AccordionItem key={category} value={category}>
-            <AccordionTrigger className="px-2 bg-slate-100 hover:no-underline	">
+            <AccordionTrigger className="px-2 bg-slate-100 hover:no-underline	py-2">
               {category}
             </AccordionTrigger>
             <AccordionContent className="bg-white">
