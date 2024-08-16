@@ -9,7 +9,12 @@ import { TopControllers } from "./top-controllers";
 import options from "./options";
 import { default as customOnEditor } from "./on-editor";
 import plugins from "./plugins";
-import { ScrollArea } from "@/components/ui";
+import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+} from "@/components/ui";
+import { LeftPanel } from "./left-panel";
 
 export const GrapesjsUI = () => {
   const editorRef = useRef<Editor | null>(null);
@@ -27,7 +32,7 @@ export const GrapesjsUI = () => {
   return (
     <div>
       <GjsEditor
-        className="gjs-custom-editor text-slate-500 "
+        className="gjs-custom-editor"
         // Pass the core GrapesJS library to the wrapper (required).
         // You can also pass the CDN url (eg. "https://unpkg.com/grapesjs")
         grapesjs={grapesjs}
@@ -40,7 +45,8 @@ export const GrapesjsUI = () => {
         // Add new plugins
         plugins={[gsPluginBlocksBasic, gsPluginTuiImageEditor, ...plugins]}
       >
-        <div className="flex h-screen overflow-hidden">
+        {/* <div className="flex h-screen overflow-hidden">
+          <LeftPanel />
           <section className="flex-1 flex flex-col">
             <TopControllers />
             <Canvas className="bg-slate-200 p-2 2xl:p-4" />
@@ -48,7 +54,38 @@ export const GrapesjsUI = () => {
           <ScrollArea className="w-60 bg-slate-50 border-l">
             <RightPanel />
           </ScrollArea>
-        </div>
+        </div> */}
+
+        <ResizablePanelGroup
+          direction="horizontal"
+          className="flex bg-green-50 h-screen overflow-hidden"
+        >
+          <ResizablePanel
+            defaultSize={11}
+            minSize={11}
+            className="w-[200px] bg-gray-200 h-full"
+          >
+            <LeftPanel />
+          </ResizablePanel>
+          <ResizableHandle withHandle />
+
+          <ResizablePanel className="flex-1 h-full">
+            <header>
+              <TopControllers />
+            </header>
+            <main className="h-full">
+              <Canvas className="bg-slate-200 border-b-[42px] border-transparent" />
+            </main>
+          </ResizablePanel>
+          <ResizableHandle withHandle />
+          <ResizablePanel
+            defaultSize={11}
+            minSize={11}
+            className="w-[200px] bg-gray-200 h-full"
+          >
+            <RightPanel />
+          </ResizablePanel>
+        </ResizablePanelGroup>
       </GjsEditor>
     </div>
   );
