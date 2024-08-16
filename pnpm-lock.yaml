@@ -56,9 +56,6 @@ importers:
       grapesjs-blocks-basic:
         specifier: ^1.0.2
         version: 1.0.2
-      grapesjs-plugin-ckeditor:
-        specifier: ^1.0.1
-        version: 1.0.1
       grapesjs-plugin-export:
         specifier: ^1.0.12
         version: 1.0.12
@@ -916,9 +913,6 @@ packages:
   '@types/backbone@1.4.19':
     resolution: {integrity: sha512-byyn236JymGByOajKA7mi1k+/jKn162TIvArOB4SHgOGbVlFj8CSfJH4jekP0qo0vJwW5khrrsiiO1Jsos6ZvA==}
 
-  '@types/ckeditor4@4.20.7':
-    resolution: {integrity: sha512-Xn4wMey4cSpEtpv0aF9AQaoDT6aYAoqmnKj0g+sWg8Xp3S6hRuec2et45kp9gP69qTuCufEUQnZhBn3o+4UbWQ==}
-
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
 
@@ -1341,9 +1335,6 @@ packages:
 
   grapesjs-blocks-basic@1.0.2:
     resolution: {integrity: sha512-SsPKf/CvQkZ+kABOsN01auAPHXh/2J20g0AWYF7fHR3Gw3TZLtdIxT1mk90Qzi76u/7sUYi3CTI+i3ZaTtXHRA==}
-
-  grapesjs-plugin-ckeditor@1.0.1:
-    resolution: {integrity: sha512-ILxmI36udAkLgF+rP5jBtabq88zg04uUYPP60rXa6qTgjXK96vuq21xkh1qZiDGLUYiPVC3jgVPaCO68sH500Q==}
 
   grapesjs-plugin-export@1.0.12:
     resolution: {integrity: sha512-q5rn1dwUYqPwDVnL9dhMxInk2SXWbrJ7OUUjFYk2LGJoT1laN3TZSDlDn/DVp9pCQd7fyHDgLdy8mvaVVmSh6g==}
@@ -2606,8 +2597,6 @@ snapshots:
       '@types/jquery': 3.5.30
       '@types/underscore': 1.11.15
 
-  '@types/ckeditor4@4.20.7': {}
-
   '@types/estree@1.0.5': {}
 
   '@types/file-saver@2.0.7': {}
@@ -3092,10 +3081,6 @@ snapshots:
       slash: 3.0.0
 
   grapesjs-blocks-basic@1.0.2: {}
-
-  grapesjs-plugin-ckeditor@1.0.1:
-    dependencies:
-      '@types/ckeditor4': 4.20.7
 
   grapesjs-plugin-export@1.0.12:
     dependencies:
