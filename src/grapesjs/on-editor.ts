@@ -1,4 +1,5 @@
 import { Editor } from "grapesjs";
+import appendTailwindCss from "./append-tailwindCss";
 
 export default async (editor: Editor) => {
   {
@@ -26,6 +27,13 @@ export default async (editor: Editor) => {
     });
     editor.on("component:change", (e) => {
       console.log("component:change");
+    });
+
+    // Loaded TailwindCSS
+    editor.Canvas.getModel()["on"]("change:frames", (_m, frames) => {
+      frames.forEach((frame) =>
+        frame.once("loaded", () => appendTailwindCss(frame))
+      );
     });
   }
 };

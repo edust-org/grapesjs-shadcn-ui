@@ -4,7 +4,7 @@ export const CustomBlockPlugin = (editor: Editor) => {
   const blockManager = editor.BlockManager;
   blockManager.add("h1-block", {
     label: "Heading",
-    content: "<h1>Put your title here</h1>",
+    content: "<h1 class='bg-red-500 text-3xl'>Put your title here</h1>",
     category: "Custom",
     attributes: {
       title: "Insert h1 block",
