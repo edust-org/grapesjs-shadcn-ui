@@ -4,6 +4,7 @@ import { SlSizeFullscreen } from "react-icons/sl";
 import { Button } from "@/components/ui";
 import { FaCode, FaRedo, FaSave, FaUndo } from "react-icons/fa";
 import { MdBorderClear, MdDelete } from "react-icons/md";
+import { PiExportBold } from "react-icons/pi";
 
 export const RightButtons = () => {
   const editor = useEditor();
@@ -42,6 +43,10 @@ export const RightButtons = () => {
       {
         id: "save-db",
         icon: <FaSave />,
+      },
+      {
+        id: "custom:grapesjs-plugin-export",
+        icon: <PiExportBold />,
       },
     ],
     [UndoManager]
