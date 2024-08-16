@@ -24,7 +24,7 @@ export default function CustomBlockManager({
             <AccordionTrigger className="px-2 bg-slate-100 hover:no-underline	py-2">
               {category}
             </AccordionTrigger>
-            <AccordionContent className="bg-white">
+            <AccordionContent className="bg-white pb-0">
               <div className="grid grid-cols-2 gap-2 p-2">
                 {blocks.map((block) => (
                   <div

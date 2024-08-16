@@ -12,7 +12,7 @@ const options = (editorRef: any) => ({
   panels: { defaults: [] }, // Avoid default panels
 
   // If you enable multiple pages options then you need this
-  /*
+
   projectData: {
     assets: [
       "https://via.placeholder.com/350x250/78c5d6/fff",
@@ -23,10 +23,10 @@ const options = (editorRef: any) => ({
     ],
     pages: [
       {
-        name: "Home page",
-        component: `<h1>GrapesJS React Custom UI with ShadcnUIx</h1>`,
+        name: "Home",
+        component: `<h1>GrapesJS React Custom UI with ShadcnUI</h1>`,
       },
     ],
-  }, */
+  },
 });
 export default options;
