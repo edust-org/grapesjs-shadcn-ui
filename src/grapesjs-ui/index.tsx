@@ -66,7 +66,7 @@ export const GrapesjsUI = () => {
           {/* end Left Panel */}
 
           {/* Start Middle Area */}
-          <ResizablePanel className="flex-1 h-full">
+          <ResizablePanel minSize={30} className="flex-1 h-full">
             <header>
               <TopControllers />
             </header>
