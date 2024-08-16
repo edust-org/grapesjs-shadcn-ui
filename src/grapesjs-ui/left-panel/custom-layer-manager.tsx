@@ -2,7 +2,7 @@ import * as React from "react";
 import { LayersResultProps, useEditor } from "@grapesjs/react";
 import type { Component, Editor } from "grapesjs";
 import { useRef, useState } from "react";
-import LayerItem from "./layer-item";
+import LayerItem from "../left-panel/layer-item";
 
 type DragRect = {
   y: number;
