@@ -1,6 +1,12 @@
+import { EditorConfig } from "grapesjs";
+import gsPluginBlocksBasic from "grapesjs-blocks-basic";
+import gsPluginTuiImageEditor from "grapesjs-tui-image-editor";
+import gsPluginExport from "grapesjs-plugin-export";
+import plugins from "./plugins";
+
 import uploadFile from "./upload-file";
 
-const options = (editorRef: any) => ({
+const options = (editorRef: any): EditorConfig => ({
   height: "100vh",
   storageManager: false,
   undoManager: { trackSelection: false },
@@ -28,5 +34,13 @@ const options = (editorRef: any) => ({
       },
     ],
   },
+
+  plugins: [
+    gsPluginBlocksBasic,
+    gsPluginTuiImageEditor,
+    gsPluginExport,
+    ...plugins,
+  ],
+  pluginsOpts: {},
 });
 export default options;

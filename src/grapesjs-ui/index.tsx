@@ -1,14 +1,10 @@
 import { useRef } from "react";
 import grapesjs, { Editor } from "grapesjs";
 import GjsEditor, { Canvas } from "@grapesjs/react";
-import gsPluginBlocksBasic from "grapesjs-blocks-basic";
-import gsPluginTuiImageEditor from "grapesjs-tui-image-editor";
-
 import { RightPanel } from "./right-panel";
 import { TopControllers } from "./top-controllers";
 import options from "./options";
 import { default as customOnEditor } from "./on-editor";
-import plugins from "./plugins";
 import {
   ResizableHandle,
   ResizablePanel,
@@ -42,8 +38,6 @@ export const GrapesjsUI = () => {
         // GrapesJS init options
         options={options(editorRef)}
         onEditor={onEditor}
-        // Add new plugins
-        plugins={[gsPluginBlocksBasic, gsPluginTuiImageEditor, ...plugins]}
       >
         {/* <div className="flex h-screen overflow-hidden">
           <LeftPanel />
@@ -64,7 +58,7 @@ export const GrapesjsUI = () => {
           <ResizablePanel
             defaultSize={10}
             minSize={8}
-            className="w-[200px] h-full"
+            className="w-[200px] h-full bg-white"
           >
             <LeftPanel />
           </ResizablePanel>
@@ -87,7 +81,7 @@ export const GrapesjsUI = () => {
           <ResizablePanel
             defaultSize={10}
             minSize={8}
-            className="w-[200px] h-full"
+            className="w-[200px] h-full bg-white"
           >
             <RightPanel />
           </ResizablePanel>
