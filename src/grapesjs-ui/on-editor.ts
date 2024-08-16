@@ -13,6 +13,10 @@ export default async (editor: Editor) => {
       },
     });
 
+    editor.Commands.add("custom:grapesjs-plugin-export", () => {
+      return editor.runCommand("gjs-export-zip");
+    });
+
     /*
     editor.on("component:add", (e) => {
       console.log("component:add");

@@ -4,6 +4,7 @@ import { SlSizeFullscreen } from "react-icons/sl";
 import { Button } from "@/components/ui";
 import { FaCode, FaRedo, FaSave, FaUndo } from "react-icons/fa";
 import { MdBorderClear, MdDelete } from "react-icons/md";
+import { PiExportBold } from "react-icons/pi";
 
 export const RightButtons = () => {
   const editor = useEditor();
@@ -12,6 +13,16 @@ export const RightButtons = () => {
 
   const cmdButtons = useMemo(
     () => [
+      {
+        id: "core:redo",
+        icon: <FaRedo />,
+        disabled: () => !UndoManager.hasRedo(),
+      },
+      {
+        id: "core:undo",
+        icon: <FaUndo />,
+        disabled: () => !UndoManager.hasUndo(),
+      },
       {
         id: "core:component-outline",
         icon: <MdBorderClear />,
@@ -30,14 +41,8 @@ export const RightButtons = () => {
         icon: <MdDelete />,
       },
       {
-        id: "core:undo",
-        icon: <FaUndo />,
-        disabled: () => !UndoManager.hasUndo(),
-      },
-      {
-        id: "core:redo",
-        icon: <FaRedo />,
-        disabled: () => !UndoManager.hasRedo(),
+        id: "custom:grapesjs-plugin-export",
+        icon: <PiExportBold />,
       },
       {
         id: "save-db",
@@ -65,7 +70,7 @@ export const RightButtons = () => {
 
   const handleButtons = ({ Commands, id, options }) => {
     if (id == "core:canvas-clear") {
-      const isConfirm = confirm("Are you sure?");
+      const isConfirm = confirm("Do you want do delete it?");
 
       if (!isConfirm) return;
     }
