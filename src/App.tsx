@@ -1,9 +1,9 @@
-import { Grapesjs } from "./grapesjs";
+import { GrapesjsUI } from "./grapesjs-ui";
 
 function App() {
   return (
     <>
-      <Grapesjs />
+      <GrapesjsUI />
     </>
   );
 }

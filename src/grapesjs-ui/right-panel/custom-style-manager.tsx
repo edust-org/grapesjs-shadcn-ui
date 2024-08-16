@@ -4,7 +4,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../../components/ui/accordion";
+} from "@/components/ui";
 import StylePropertyField from "./style-property-field";
 
 export default function CustomStyleManager({

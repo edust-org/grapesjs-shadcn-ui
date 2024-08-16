@@ -1,6 +1,6 @@
 import { DevicesProvider, WithEditor } from "@grapesjs/react";
 import { RightButtons } from "./right-buttons";
-import { Button } from "../../components/ui/button";
+import { Button } from "@/components/ui";
 import { FaDesktop, FaMobileAlt } from "react-icons/fa";
 import { FaTabletScreenButton } from "react-icons/fa6";
 import { BiMobileLandscape } from "react-icons/bi";

@@ -2,17 +2,17 @@ import * as React from "react";
 import { useEditor } from "@grapesjs/react";
 import type { Trait } from "grapesjs";
 import {
+  Button,
+  Checkbox,
+  Input,
   Select,
   SelectContent,
   SelectGroup,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "../../components/ui/select";
+} from "@/components/ui";
 import ColorInput from "./color-input";
-import { Button } from "../../components/ui/button";
-import { Checkbox } from "../../components/ui/checkbox";
-import { Input } from "../../components/ui/input";
 
 interface StylePropertyFieldProps extends React.HTMLProps<HTMLDivElement> {
   trait: Trait;

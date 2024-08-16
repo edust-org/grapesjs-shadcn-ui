@@ -16,7 +16,7 @@ import {
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "../../components/ui/tabs";
+} from "@/components/ui";
 import { MdDashboardCustomize } from "react-icons/md";
 import { FaLayerGroup, FaPaintBrush } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";

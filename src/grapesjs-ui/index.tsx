@@ -9,9 +9,9 @@ import gsPluginTuiImageEditor from "grapesjs-tui-image-editor";
 import { default as customOnEditor } from "./on-editor";
 import { CustomBlockPlugin } from "./custom-block-plugin";
 import { useRef } from "react";
-import { ScrollArea } from "../components/ui/scroll-area";
+import { ScrollArea } from "@/components/ui";
 
-export const Grapesjs = () => {
+export const GrapesjsUI = () => {
   const editorRef = useRef<Editor | null>(null);
 
   const onEditor = async (editor: Editor) => {

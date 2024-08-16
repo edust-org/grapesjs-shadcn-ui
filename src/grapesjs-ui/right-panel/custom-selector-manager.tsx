@@ -9,17 +9,16 @@ import {
   FormControl,
   FormField,
   FormItem,
-} from "../../components/ui/form";
-import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "../../components/ui/select";
-import { Button } from "../../components/ui/button";
+  Button,
+  Input,
+} from "@/components/ui";
+import {} from "@/components/ui";
 import { useState } from "react";
-import { Input } from "../../components/ui/input";
 
 const FormSchema = z.object({
   state: z

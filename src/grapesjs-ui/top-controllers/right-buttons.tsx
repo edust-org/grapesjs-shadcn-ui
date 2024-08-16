@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useEditor } from "@grapesjs/react";
 import { SlSizeFullscreen } from "react-icons/sl";
-import { Button } from "../../components/ui/button";
+import { Button } from "@/components/ui";
 import { FaCode, FaRedo, FaSave, FaUndo } from "react-icons/fa";
 import { MdBorderClear, MdDelete } from "react-icons/md";
 

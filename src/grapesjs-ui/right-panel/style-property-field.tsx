@@ -13,20 +13,21 @@ import { MdDelete, MdOutlineArrowDropDownCircle } from "react-icons/md";
 import { IoIosClose, IoMdArrowDropupCircle } from "react-icons/io";
 import { FaPlus } from "react-icons/fa";
 
-import { Button } from "../../components/ui/button";
-import { Input } from "../../components/ui/input";
 import ColorInput from "./color-input";
 import {
+  Button,
+  Input,
   Select,
   SelectContent,
   SelectGroup,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "../../components/ui/select";
-import { RadioGroup, RadioGroupItem } from "../../components/ui/radio-group";
-import { Label } from "../../components/ui/label";
-import { Slider } from "../../components/ui/slider";
+  RadioGroup,
+  RadioGroupItem,
+  Label,
+  Slider,
+} from "@/components/ui";
 
 interface StylePropertyFieldProps extends React.HTMLProps<HTMLDivElement> {
   prop: Property;

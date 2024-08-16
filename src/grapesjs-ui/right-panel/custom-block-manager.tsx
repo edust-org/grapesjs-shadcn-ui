@@ -4,7 +4,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../../components/ui/accordion";
+} from "@/components/ui";
 
 export type CustomBlockManagerProps = Pick<
   BlocksResultProps,
