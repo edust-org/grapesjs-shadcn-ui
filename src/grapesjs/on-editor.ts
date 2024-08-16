@@ -2,10 +2,6 @@ import { Editor } from "grapesjs";
 
 export default async (editor: Editor) => {
   {
-    if (!editor) {
-      console.error("Editor is not initialized");
-      return;
-    }
     editor.Commands.add("save-db", {
       run: async () => {
         const content = JSON.stringify({

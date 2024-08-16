@@ -1,9 +1,16 @@
-const options = {
+import uploadFile from "./upload-file";
+
+const options = (editorRef: any) => ({
   height: "100vh",
   storageManager: false,
   undoManager: { trackSelection: false },
   selectorManager: { componentFirst: true },
+  assetManager: {
+    uploadName: "file",
+    uploadFile: (e) => uploadFile(e, editorRef),
+  },
   panels: { defaults: [] }, // Avoid default panels
+
   // If you enable multiple pages options then you need this
   /*
   projectData: {
@@ -21,5 +28,5 @@ const options = {
       },
     ],
   }, */
-};
+});
 export default options;

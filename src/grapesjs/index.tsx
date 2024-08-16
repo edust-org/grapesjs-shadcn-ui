@@ -8,9 +8,20 @@ import gsPluginBlocksBasic from "grapesjs-blocks-basic";
 import gsPluginTuiImageEditor from "grapesjs-tui-image-editor";
 import { default as customOnEditor } from "./on-editor";
 import { CustomBlockPlugin } from "./custom-block-plugin";
+import { useRef } from "react";
 
 export const Grapesjs = () => {
-  const onEditor = async (editor: Editor) => customOnEditor(editor);
+  const editorRef = useRef<Editor | null>(null);
+
+  const onEditor = async (editor: Editor) => {
+    if (!editor) {
+      console.error("Editor is not initialized");
+      return;
+    }
+    editorRef.current = editor;
+
+    return customOnEditor(editor);
+  };
 
   return (
     <div>
@@ -23,7 +34,7 @@ export const Grapesjs = () => {
         // This is an optional prop, you can always import the CSS directly in your JS if you wish.
         grapesjsCss="https://unpkg.com/grapesjs/dist/css/grapes.min.css" // css cdn
         // GrapesJS init options
-        options={options}
+        options={options(editorRef)}
         onEditor={onEditor}
         // Add new plugins
         plugins={[
