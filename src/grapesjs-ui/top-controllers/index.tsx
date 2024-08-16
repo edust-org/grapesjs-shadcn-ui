@@ -1,6 +1,11 @@
 import { DevicesProvider, WithEditor } from "@grapesjs/react";
 import { RightButtons } from "./right-buttons";
-import { Button } from "@/components/ui";
+import {
+  Button,
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui";
 import { FaDesktop, FaMobileAlt } from "react-icons/fa";
 import { FaTabletScreenButton } from "react-icons/fa6";
 import { BiMobileLandscape } from "react-icons/bi";
@@ -21,20 +26,26 @@ export const TopControllers = () => {
             return (
               <div>
                 {devices.length > 0 && (
-                  <Button
-                    variant={"ghost"}
-                    className={`my-1 px-2 h-8 ${
-                      selected == "desktop" && "bg-white"
-                    }`}
-                    title={devices[0].getName()}
-                    onClick={() => handleDevice(devices[0]?.id, select)}
-                  >
-                    <FaDesktop
-                      className={
-                        selected == "desktop" ? iconActive : iconInactive
-                      }
-                    />
-                  </Button>
+                  <Tooltip>
+                    <TooltipContent>
+                      <p>Desktop</p>
+                    </TooltipContent>
+                    <TooltipTrigger asChild>
+                      <Button
+                        variant={"ghost"}
+                        className={`my-1 px-2 h-8 ${
+                          selected == "desktop" && "bg-white"
+                        }`}
+                        onClick={() => handleDevice(devices[0]?.id, select)}
+                      >
+                        <FaDesktop
+                          className={
+                            selected == "desktop" ? iconActive : iconInactive
+                          }
+                        />
+                      </Button>
+                    </TooltipTrigger>
+                  </Tooltip>
                 )}
                 {devices.length > 1 && (
                   <Button

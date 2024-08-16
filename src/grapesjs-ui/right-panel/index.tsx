@@ -1,27 +1,17 @@
 import {
   BlocksProvider,
-  LayersProvider,
-  PagesProvider,
   SelectorsProvider,
   StylesProvider,
   TraitsProvider,
 } from "@grapesjs/react";
 import CustomBlockManager from "./custom-block-manager";
-import CustomLayerManager from "./custom-layer-manager";
 import CustomSelectorManager from "./custom-selector-manager";
 import CustomStyleManager from "./custom-style-manager";
 import CustomTraitManager from "./custom-trait-manager";
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@/components/ui";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui";
 import { MdDashboardCustomize } from "react-icons/md";
-import { FaLayerGroup, FaPaintBrush } from "react-icons/fa";
+import { FaPaintBrush } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";
-// import { RiFileCopy2Line } from "react-icons/ri";
-// import CustomPageManager from "./custom-page-manager";
 
 export const RightPanel = () => {
   return (
@@ -34,15 +24,9 @@ export const RightPanel = () => {
           <TabsTrigger value="traits">
             <IoMdSettings className="text-lg" />
           </TabsTrigger>
-          <TabsTrigger value="layers">
-            <FaLayerGroup className="text-lg" />
-          </TabsTrigger>
           <TabsTrigger value="blocks">
             <MdDashboardCustomize className="text-lg" />
           </TabsTrigger>
-          {/* <TabsTrigger value="pages">
-            <RiFileCopy2Line className="text-lg" />
-          </TabsTrigger> */}
         </TabsList>
         <TabsContent value="selectors">
           <>
@@ -59,21 +43,11 @@ export const RightPanel = () => {
             {(props) => <CustomTraitManager {...props} />}
           </TraitsProvider>
         </TabsContent>
-        <TabsContent value="layers">
-          <LayersProvider>
-            {(props) => <CustomLayerManager {...props} />}
-          </LayersProvider>
-        </TabsContent>
         <TabsContent value="blocks">
           <BlocksProvider>
             {(props) => <CustomBlockManager {...props} />}
           </BlocksProvider>
         </TabsContent>
-        {/* <TabsContent value="pages">
-          <PagesProvider>
-            {(props) => <CustomPageManager {...props} />}
-          </PagesProvider>
-        </TabsContent> */}
       </Tabs>
     </>
   );

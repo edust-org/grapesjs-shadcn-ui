@@ -58,17 +58,20 @@ export const GrapesjsUI = () => {
 
         <ResizablePanelGroup
           direction="horizontal"
-          className="flex bg-green-50 h-screen overflow-hidden"
+          className="flex h-screen overflow-hidden"
         >
+          {/* Start Left Panel */}
           <ResizablePanel
-            defaultSize={11}
-            minSize={11}
-            className="w-[200px] bg-gray-200 h-full"
+            defaultSize={10}
+            minSize={8}
+            className="w-[200px] h-full"
           >
             <LeftPanel />
           </ResizablePanel>
           <ResizableHandle withHandle />
+          {/* end Left Panel */}
 
+          {/* Start Middle Area */}
           <ResizablePanel className="flex-1 h-full">
             <header>
               <TopControllers />
@@ -77,14 +80,18 @@ export const GrapesjsUI = () => {
               <Canvas className="bg-slate-200 border-b-[42px] border-transparent" />
             </main>
           </ResizablePanel>
+          {/* End Middle Area */}
+
+          {/* Start Right Panel */}
           <ResizableHandle withHandle />
           <ResizablePanel
-            defaultSize={11}
-            minSize={11}
-            className="w-[200px] bg-gray-200 h-full"
+            defaultSize={10}
+            minSize={8}
+            className="w-[200px] h-full"
           >
             <RightPanel />
           </ResizablePanel>
+          {/* End Right Panel */}
         </ResizablePanelGroup>
       </GjsEditor>
     </div>
