@@ -1,3 +1,5 @@
-import { customBlockPlugin } from "./custom-block-plugin";
+import { componentsPlugin } from "./components";
+import { customPlugin } from "./custom-plugin";
+import { typographyPlugin } from "./typography";
 
-export default [customBlockPlugin];
+export default [typographyPlugin, componentsPlugin, customPlugin];

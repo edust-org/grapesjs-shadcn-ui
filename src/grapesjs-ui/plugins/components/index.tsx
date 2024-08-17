@@ -1,11 +1,12 @@
 import { Editor } from "grapesjs";
 
-export const customBlockPlugin = (editor: Editor) => {
+export const componentsPlugin = (editor: Editor) => {
   const blockManager = editor.BlockManager;
-  blockManager.add("h1-block", {
-    label: "Heading",
+
+  blockManager.add("components-h1", {
+    label: "H1 Comp",
     content: "<h1 class='bg-red-500 text-3xl'>Put your title here</h1>",
-    category: "Custom",
+    category: "Components",
     attributes: {
       title: "Insert h1 block",
     },
