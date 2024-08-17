@@ -1,11 +1,26 @@
 import { Editor } from "grapesjs";
 
+/**
+ * @param editor
+ *
+ * Category: Typography
+ *
+ * Items:
+ *   - H1
+ *   - H2
+ *   - H3
+ *   - H4
+ *   - H5
+ *   - H6
+ *   - p
+ */
+
 export const typographyPlugin = (editor: Editor) => {
   const blockManager = editor.BlockManager;
 
-  // Heading 1
+  // H1
   blockManager.add("typography-h1", {
-    label: "Heading 1",
+    label: "H1",
     content: "<h1 class='bg-red-500 text-3xl'>Put your title here</h1>",
     category: "Typography",
     attributes: {

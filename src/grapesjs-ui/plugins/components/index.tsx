@@ -1,5 +1,16 @@
 import { Editor } from "grapesjs";
 
+/**
+ * @param editor
+ *
+ * Category: Components
+ *
+ * Items:
+ *   - Button
+ *   - Link
+ *   - Card
+ */
+
 export const componentsPlugin = (editor: Editor) => {
   const blockManager = editor.BlockManager;
 

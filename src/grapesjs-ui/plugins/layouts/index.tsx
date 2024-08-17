@@ -1,7 +1,6 @@
 import { Editor } from "grapesjs";
 
 /**
- *
  * @param editor
  *
  * Category: Layout
