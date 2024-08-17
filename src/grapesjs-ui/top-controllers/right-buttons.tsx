@@ -80,7 +80,7 @@ export const RightButtons = () => {
 
   return (
     <>
-      <div className="flex gap-3 ml-auto px-2 panel__top" id="panel-top">
+      <div className="flex flex-wrap gap-3 ml-auto px-2 panel__top" id="panel-top">
         {cmdButtons.map(({ id, icon, disabled, options = {} }) => (
           <Button
             key={id}

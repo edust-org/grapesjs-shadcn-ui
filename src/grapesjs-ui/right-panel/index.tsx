@@ -8,7 +8,13 @@ import CustomBlockManager from "./custom-block-manager";
 import CustomSelectorManager from "./custom-selector-manager";
 import CustomStyleManager from "./custom-style-manager";
 import CustomTraitManager from "./custom-trait-manager";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui";
+import {
+  ScrollArea,
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui";
 import { MdDashboardCustomize } from "react-icons/md";
 import { FaPaintBrush } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";
@@ -28,26 +34,28 @@ export const RightPanel = () => {
             <MdDashboardCustomize className="text-lg" />
           </TabsTrigger>
         </TabsList>
-        <TabsContent value="selectors">
-          <>
-            <SelectorsProvider>
-              {(props) => <CustomSelectorManager {...props} />}
-            </SelectorsProvider>
-            <StylesProvider>
-              {(props) => <CustomStyleManager {...props} />}
-            </StylesProvider>
-          </>
-        </TabsContent>
-        <TabsContent value="traits">
-          <TraitsProvider>
-            {(props) => <CustomTraitManager {...props} />}
-          </TraitsProvider>
-        </TabsContent>
-        <TabsContent value="blocks">
-          <BlocksProvider>
-            {(props) => <CustomBlockManager {...props} />}
-          </BlocksProvider>
-        </TabsContent>
+        <ScrollArea className="h-screen">
+          <TabsContent value="selectors">
+            <>
+              <SelectorsProvider>
+                {(props) => <CustomSelectorManager {...props} />}
+              </SelectorsProvider>
+              <StylesProvider>
+                {(props) => <CustomStyleManager {...props} />}
+              </StylesProvider>
+            </>
+          </TabsContent>
+          <TabsContent value="traits">
+            <TraitsProvider>
+              {(props) => <CustomTraitManager {...props} />}
+            </TraitsProvider>
+          </TabsContent>
+          <TabsContent value="blocks">
+            <BlocksProvider>
+              {(props) => <CustomBlockManager {...props} />}
+            </BlocksProvider>
+          </TabsContent>
+        </ScrollArea>
       </Tabs>
     </>
   );

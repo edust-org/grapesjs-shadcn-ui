@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import grapesjs, { Editor } from "grapesjs";
 import GjsEditor, { Canvas } from "@grapesjs/react";
 import { RightPanel } from "./right-panel";
@@ -11,8 +11,10 @@ import {
   ResizablePanelGroup,
 } from "@/components/ui";
 import { LeftPanel } from "./left-panel";
+import useWindowSize from "./use-window-resize";
 
 export const GrapesjsUI = () => {
+  const { width: windowWidth } = useWindowSize();
   const editorRef = useRef<Editor | null>(null);
 
   const onEditor = async (editor: Editor) => {
@@ -56,7 +58,15 @@ export const GrapesjsUI = () => {
         >
           {/* Start Left Panel */}
           <ResizablePanel
-            defaultSize={10}
+            defaultSize={
+              windowWidth >= 1280
+                ? 12
+                : windowWidth >= 1024
+                ? 15
+                : windowWidth >= 768
+                ? 20
+                : 12
+            }
             minSize={8}
             className="w-[200px] h-full bg-white"
           >
@@ -79,7 +89,15 @@ export const GrapesjsUI = () => {
           {/* Start Right Panel */}
           <ResizableHandle withHandle />
           <ResizablePanel
-            defaultSize={10}
+            defaultSize={
+              windowWidth >= 1280
+                ? 12
+                : windowWidth >= 1024
+                ? 15
+                : windowWidth >= 768
+                ? 20
+                : 12
+            }
             minSize={8}
             className="w-[200px] h-full bg-white"
           >

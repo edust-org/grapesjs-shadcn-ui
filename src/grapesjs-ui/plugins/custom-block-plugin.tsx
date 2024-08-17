@@ -1,6 +1,6 @@
 import { Editor } from "grapesjs";
 
-export const CustomBlockPlugin = (editor: Editor) => {
+export const customBlockPlugin = (editor: Editor) => {
   const blockManager = editor.BlockManager;
   blockManager.add("h1-block", {
     label: "Heading",

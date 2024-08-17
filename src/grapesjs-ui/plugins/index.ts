@@ -1,6 +1,3 @@
-import { CustomBlockPlugin } from "./custom-block-plugin"
+import { customBlockPlugin } from "./custom-block-plugin";
 
-
-export default [
-  CustomBlockPlugin,
-]
+export default [customBlockPlugin];
