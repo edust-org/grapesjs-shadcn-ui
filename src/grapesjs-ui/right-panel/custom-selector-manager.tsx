@@ -131,7 +131,9 @@ export default function CustomSelectorManager({
             key={selector.toString()}
             className="px-2 py-1 flex items-center gap-1 whitespace-nowrap bg-slate-500 text-white rounded"
           >
-            <div>{selector.getLabel()}</div>
+            <div className="whitespace-pre-wrap	break-all">
+              {selector.getLabel()}
+            </div>
             <button type="button" onClick={() => removeSelector(selector)}>
               <IoIosClose />
             </button>
