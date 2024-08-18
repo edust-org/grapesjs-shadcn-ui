@@ -73,14 +73,16 @@ export const RightButtons = () => {
       const isConfirm = confirm("Do you want do delete it?");
 
       if (!isConfirm) return;
+      Commands.isActive(id) ? Commands.stop(id) : Commands.run(id, options);
     }
-
-    Commands.isActive(id) ? Commands.stop(id) : Commands.run(id, options);
   };
 
   return (
     <>
-      <div className="flex flex-wrap gap-3 ml-auto px-2 panel__top" id="panel-top">
+      <div
+        className="flex flex-wrap gap-3 ml-auto px-2 panel__top"
+        id="panel-top"
+      >
         {cmdButtons.map(({ id, icon, disabled, options = {} }) => (
           <Button
             key={id}
