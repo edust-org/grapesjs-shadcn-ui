@@ -20,18 +20,21 @@ export const layoutPlugin = (editor: Editor) => {
   blockManager.add("layout-section", {
     label: "Section",
     category: "Layout",
+    select: true,
     activate: true,
     content: {
       tagName: "section",
       name: "Section",
-      content: "Put your block",
-      attributes: { class: "w-full px-4" },
+      attributes: { class: "w-full px-4 min-h-10" },
+      components: [
+        {
+          tagName: "p",
+          type: "text",
+          content: "Put your block",
+        },
+      ],
     },
-    media: `<svg  viewBox="0 0 182 130" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="182" height="130" fill="white"/>
-              <rect x="16.5" y="16.5" width="149" height="59" fill="#D9D9D9" stroke="#94A3B8" stroke-dasharray="2 2"/>
-              <rect x="16.5" y="84.5" width="149" height="29" fill="#D9D9D9" stroke="#94A3B8" stroke-dasharray="2 2"/>
-            </svg>`,
+    media: `<svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 17 17" height="3em" width="3em" xmlns="http://www.w3.org/2000/svg"><g></g><path d="M1 0h3v17h-3v-17zM5 17h3v-17h-3v17zM9 17h3v-17h-3v17zM13 0v17h3v-17h-3z"></path></svg>`,
   });
 
   // Container
@@ -45,11 +48,7 @@ export const layoutPlugin = (editor: Editor) => {
       content: "Put your block",
       attributes: { class: "container mx-auto px-4" },
     },
-    media: `<svg  viewBox="0 0 182 130" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="182" height="130" fill="white"/>
-              <rect x="16.5" y="16.5" width="149" height="59" fill="#D9D9D9" stroke="#94A3B8" stroke-dasharray="2 2"/>
-              <rect x="16.5" y="84.5" width="149" height="29" fill="#D9D9D9" stroke="#94A3B8" stroke-dasharray="2 2"/>
-            </svg>`,
+    media: `<svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 17 17" height="3em" width="3em" xmlns="http://www.w3.org/2000/svg"><g></g><path d="M1 0h3v17h-3v-17zM5 17h3v-17h-3v17zM9 17h3v-17h-3v17zM13 0v17h3v-17h-3z"></path></svg>`,
   });
 
   // Col-1
@@ -69,11 +68,7 @@ export const layoutPlugin = (editor: Editor) => {
       ],
       attributes: { class: "grid gap-6 grid-cols-1" },
     },
-    media: `<svg  viewBox="0 0 182 130" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="182" height="130" fill="white"/>
-              <rect x="16.5" y="16.5" width="149" height="59" fill="#D9D9D9" stroke="#94A3B8" stroke-dasharray="2 2"/>
-              <rect x="16.5" y="84.5" width="149" height="29" fill="#D9D9D9" stroke="#94A3B8" stroke-dasharray="2 2"/>
-            </svg>`,
+    media: `<svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 17 17" height="3em" width="3em" xmlns="http://www.w3.org/2000/svg"><g></g><path d="M1 0h3v17h-3v-17zM5 17h3v-17h-3v17zM9 17h3v-17h-3v17zM13 0v17h3v-17h-3z"></path></svg>`,
   });
 
   // Col-2
@@ -98,10 +93,6 @@ export const layoutPlugin = (editor: Editor) => {
       ],
       attributes: { class: "grid gap-6 grid-cols-1 md:grid-cols-2" },
     },
-    media: `<svg  viewBox="0 0 182 130" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="182" height="130" fill="white"/>
-              <rect x="16.5" y="16.5" width="149" height="59" fill="#D9D9D9" stroke="#94A3B8" stroke-dasharray="2 2"/>
-              <rect x="16.5" y="84.5" width="149" height="29" fill="#D9D9D9" stroke="#94A3B8" stroke-dasharray="2 2"/>
-            </svg>`,
+    media: `<svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 17 17" height="3em" width="3em" xmlns="http://www.w3.org/2000/svg"><g></g><path d="M1 0h3v17h-3v-17zM5 17h3v-17h-3v17zM9 17h3v-17h-3v17zM13 0v17h3v-17h-3z"></path></svg>`,
   });
 };

@@ -62,4 +62,71 @@ export const customPlugin = (editor: Editor) => {
 </svg>
 `,
   });
+
+  // Video block with custom attributes
+  blockManager.add("custom-video", {
+    label: "Video",
+    category: "Custom",
+    content: {
+      type: "video",
+      tagName: "video",
+      attributes: {
+        src: "https://www.w3schools.com/html/mov_bbb.mp4", // Example video source
+        autoplay: false,
+        loop: false,
+        controls: true,
+      },
+      style: { width: "100%", height: "auto" },
+      name: "Video",
+    },
+  });
+
+  // Extend the default video component to add traits for autoplay, loop, and controls
+  editor.DomComponents.addType("video", {
+    isComponent: (el) => {
+      return el.tagName === "VIDEO";
+    },
+    model: {
+      defaults: {
+        traits: [
+          {
+            type: "checkbox",
+            name: "autoplay",
+            label: "Autoplay",
+          },
+          {
+            type: "checkbox",
+            name: "loop",
+            label: "Loop",
+          },
+          {
+            type: "checkbox",
+            name: "controls",
+            label: "Controls",
+          },
+          {
+            type: "text",
+            name: "src",
+            label: "Source URL",
+          },
+        ],
+        script: function () {
+          const videoEl = this;
+
+          // Listen for changes to autoplay, loop, and controls attributes
+          videoEl.addEventListener("load", () => {
+            if (videoEl.getAttribute("autoplay")) {
+              videoEl.autoplay = videoEl.getAttribute("autoplay") === "true";
+            }
+            if (videoEl.getAttribute("loop")) {
+              videoEl.loop = videoEl.getAttribute("loop") === "true";
+            }
+            if (videoEl.getAttribute("controls")) {
+              videoEl.controls = videoEl.getAttribute("controls") === "true";
+            }
+          });
+        },
+      },
+    },
+  });
 };
