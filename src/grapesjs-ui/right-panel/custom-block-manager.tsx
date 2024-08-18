@@ -18,7 +18,7 @@ export default function CustomBlockManager({
 }: CustomBlockManagerProps) {
   return (
     <div className="gjs-custom-block-manager text-left">
-      <Accordion type="multiple" className="w-full" defaultValue={["Basic"]}>
+      <Accordion type="multiple" className="w-full pb-12" defaultValue={["Basic"]}>
         {Array.from(mapCategoryBlocks).map(([category, blocks]) => (
           <AccordionItem key={category} value={category}>
             <AccordionTrigger className="px-2 bg-slate-100 hover:no-underline	py-2">
@@ -31,13 +31,13 @@ export default function CustomBlockManager({
                     key={block.getId()}
                     draggable
                     className={
-                      "flex flex-col items-center border rounded cursor-pointer py-2 px-1 transition-colors border-slate-100 shadow bg-slate-50 hover:bg-white"
+                      "min-h-20 flex flex-col gap-1 items-center border rounded cursor-pointer py-2 px-1 transition-colors border-slate-100 shadow bg-slate-50 hover:bg-white"
                     }
                     onDragStart={(ev) => dragStart(block, ev.nativeEvent)}
                     onDragEnd={() => dragStop(false)}
                   >
                     <div
-                      className="h-6 w-6"
+                      className="h-10 w-10"
                       dangerouslySetInnerHTML={{ __html: block.getMedia()! }}
                     />
                     <div

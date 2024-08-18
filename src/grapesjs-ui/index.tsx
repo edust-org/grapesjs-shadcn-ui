@@ -72,7 +72,7 @@ export const GrapesjsUI = () => {
           >
             <LeftPanel />
           </ResizablePanel>
-          <ResizableHandle withHandle />
+          <ResizableHandle />
           {/* end Left Panel */}
 
           {/* Start Middle Area */}
@@ -87,16 +87,16 @@ export const GrapesjsUI = () => {
           {/* End Middle Area */}
 
           {/* Start Right Panel */}
-          <ResizableHandle withHandle />
+          <ResizableHandle />
           <ResizablePanel
             defaultSize={
               windowWidth >= 1280
-                ? 12
+                ? 13
                 : windowWidth >= 1024
                 ? 15
                 : windowWidth >= 768
                 ? 20
-                : 12
+                : 13
             }
             minSize={8}
             className="w-[200px] h-full bg-white"
