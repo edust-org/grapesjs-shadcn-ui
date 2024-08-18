@@ -6,6 +6,7 @@ import gsPluginCustomCode from "grapesjs-custom-code";
 import plugins from "./plugins";
 
 import uploadFile from "./upload-file";
+import template from "./template";
 
 const options = (editorRef: any): EditorConfig => ({
   height: "100vh",
@@ -14,7 +15,8 @@ const options = (editorRef: any): EditorConfig => ({
   selectorManager: { componentFirst: true },
   assetManager: {
     uploadName: "file",
-    uploadFile: (e) => uploadFile(e, editorRef),
+    // Disabled at this moment
+    // uploadFile: (e) => uploadFile(e, editorRef),
   },
   panels: { defaults: [] }, // Avoid default panels
 
@@ -31,7 +33,7 @@ const options = (editorRef: any): EditorConfig => ({
     pages: [
       {
         name: "Home",
-        component: `<h1>GrapesJS React Custom UI with ShadcnUI</h1>`,
+        component: template,
       },
     ],
   },
