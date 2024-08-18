@@ -1,6 +1,9 @@
 # Edust | GrapesJS Static Page Builder | ShadcnUI
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Issues](https://img.shields.io/github/issues/edust-org/grapesjs-shadcn-ui) ![Stars](https://img.shields.io/github/stars/edust-org/grapesjs-shadcn-ui)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Issues](https://img.shields.io/github/issues/edust-org/grapesjs-shadcn-ui)
+![Stars](https://img.shields.io/github/stars/edust-org/grapesjs-shadcn-ui)
+![Forks](https://img.shields.io/github/forks/edust-org/grapesjs-shadcn-ui)
 
 ## 🎉 Welcome to Edust Page Builder
 
