@@ -73,8 +73,8 @@ export const RightButtons = () => {
       const isConfirm = confirm("Do you want do delete it?");
 
       if (!isConfirm) return;
-      Commands.isActive(id) ? Commands.stop(id) : Commands.run(id, options);
     }
+    Commands.isActive(id) ? Commands.stop(id) : Commands.run(id, options);
   };
 
   return (

@@ -50,8 +50,8 @@ const options = (editorRef: any): EditorConfig => ({
     gsPluginBlocksBasic,
     gsPluginTuiImageEditor,
     gsPluginExport,
-    gsPluginCustomCode,
     ...plugins,
+    gsPluginCustomCode,
   ],
   pluginsOpts: {},
 });
