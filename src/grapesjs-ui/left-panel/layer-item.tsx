@@ -114,7 +114,7 @@ export default function LayerItem({
             }`}
             onClick={toggleOpen}
           >
-            <IoMdArrowDropright rotate={open ? 0 : -90} />
+            <IoMdArrowDropright className={open ? "rotate-90	" : "rotate-0"} />
           </div>
           <div className="truncate flex-grow" style={itemStyle}>
             {name}

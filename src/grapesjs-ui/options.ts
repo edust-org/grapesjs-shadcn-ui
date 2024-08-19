@@ -7,10 +7,18 @@ import plugins from "./plugins";
 
 import uploadFile from "./upload-file";
 import template from "./template";
+import haveProjectData from "./utils/have-projectData";
+
+const isProjectData = haveProjectData();
 
 const options = (editorRef: any): EditorConfig => ({
   height: "100vh",
-  storageManager: false,
+  storageManager: {
+    type: "local", // Storage type. Available: local | remote
+    autosave: true, // Store data automatically
+    autoload: true, // Autoload stored data on init
+    stepsBeforeSave: 1, // If autosave is enabled, indicates how many changes are necessary before the store method is triggered
+  },
   undoManager: { trackSelection: false },
   selectorManager: { componentFirst: true },
   assetManager: {
@@ -22,7 +30,7 @@ const options = (editorRef: any): EditorConfig => ({
 
   // If you enable multiple pages options then you need this
 
-  projectData: {
+  projectData: isProjectData || {
     assets: [
       "https://via.placeholder.com/350x250/78c5d6/fff",
       "https://via.placeholder.com/350x250/459ba8/fff",
@@ -42,8 +50,8 @@ const options = (editorRef: any): EditorConfig => ({
     gsPluginBlocksBasic,
     gsPluginTuiImageEditor,
     gsPluginExport,
-    gsPluginCustomCode,
     ...plugins,
+    gsPluginCustomCode,
   ],
   pluginsOpts: {},
 });

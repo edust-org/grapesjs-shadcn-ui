@@ -4,7 +4,7 @@ export default async (frame: { view: { getEl: () => any } }) => {
   if (!iframe) return;
   const options = {
     // default options
-    tailwindPlayCdn: "https://cdn.tailwindcss.com",
+    tailwindPlayCdn: "https://cdn.tailwindcss.com?v=3.4.5",
     plugins: [],
     config: {},
   };

@@ -62,11 +62,14 @@ export const RightButtons = () => {
     editor.on(cmdEvent, onCommand);
     editor.on(updateEvent, updateCounter);
 
+    // Set 'core:component-outline' to true by default
+    Commands.run("core:component-outline");
+
     return () => {
       editor.off(cmdEvent, onCommand);
       editor.off(updateEvent, updateCounter);
     };
-  }, [cmdButtons, editor]);
+  }, [Commands, cmdButtons, editor]);
 
   const handleButtons = ({ Commands, id, options }) => {
     if (id == "core:canvas-clear") {
@@ -74,13 +77,15 @@ export const RightButtons = () => {
 
       if (!isConfirm) return;
     }
-
     Commands.isActive(id) ? Commands.stop(id) : Commands.run(id, options);
   };
 
   return (
     <>
-      <div className="flex flex-wrap gap-3 ml-auto px-2 panel__top" id="panel-top">
+      <div
+        className="flex flex-wrap gap-3 ml-auto px-2 panel__top"
+        id="panel-top"
+      >
         {cmdButtons.map(({ id, icon, disabled, options = {} }) => (
           <Button
             key={id}
