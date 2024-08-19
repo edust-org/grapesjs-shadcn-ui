@@ -57,7 +57,7 @@ export default function CustomBlockManager({
                     }}
                   >
                     <div
-                      className="min-h-10 min-w-10 max-w-40 max-h-40 object-cover"
+                      className="min-h-10 min-w-10 max-w-40 max-h-40 w-full p-2 flex items-center justify-center object-cover"
                       dangerouslySetInnerHTML={{ __html: block.getMedia()! }}
                     />
                     {block?.getLabel() && (
