@@ -72,7 +72,7 @@ export const TopControllers = () => {
                       title={devices[2].getName()}
                       onClick={() => handleDevice(devices[2]?.id, select)}
                     >
-                      <FaMobileAlt
+                      <BiMobileLandscape
                         className={
                           selected == "mobileLandscape"
                             ? iconActive
@@ -90,7 +90,7 @@ export const TopControllers = () => {
                       title={devices[3].getName()}
                       onClick={() => handleDevice(devices[3]?.id, select)}
                     >
-                      <BiMobileLandscape
+                      <FaMobileAlt
                         className={
                           selected == "mobilePortrait"
                             ? iconActive

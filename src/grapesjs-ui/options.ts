@@ -46,6 +46,31 @@ const options = (editorRef: any): EditorConfig => ({
     ],
   },
 
+  deviceManager: {
+    devices: [
+      {
+        name: "Desktop",
+        width: "",
+        widthMedia: "1024px",
+      },
+      {
+        name: "Tablet",
+        width: "768px",
+        widthMedia: "768px",
+      },
+      {
+        name: "Mobile Landscape",
+        width: "640px",
+        widthMedia: "640px",
+      },
+      {
+        name: "Mobile Portrait",
+        width: "375px",
+        widthMedia: "375px",
+      },
+    ],
+  },
+
   plugins: [
     gsPluginBlocksBasic,
     gsPluginTuiImageEditor,
