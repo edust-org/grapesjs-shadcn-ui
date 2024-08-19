@@ -23,12 +23,13 @@ export const TopControllers = () => {
             {({ devices, select, selected }) => {
               const iconInactive = `text-lg text-slate-500`;
               const iconActive = `text-lg text-slate-900`;
+
               return (
                 <div>
                   {devices.length > 0 && (
                     <Tooltip>
                       <TooltipContent>
-                        <p>Desktop</p>
+                        <p>Desktop - {devices[0]?.getWidthMedia()}</p>
                       </TooltipContent>
                       <TooltipTrigger asChild>
                         <Button
@@ -48,56 +49,74 @@ export const TopControllers = () => {
                     </Tooltip>
                   )}
                   {devices.length > 1 && (
-                    <Button
-                      variant={"ghost"}
-                      className={`my-1 px-2 h-8 ${
-                        selected == "tablet" && "bg-white"
-                      }`}
-                      title={devices[1].getName()}
-                      onClick={() => handleDevice(devices[1]?.id, select)}
-                    >
-                      <FaTabletScreenButton
-                        className={
-                          selected == "tablet" ? iconActive : iconInactive
-                        }
-                      />
-                    </Button>
+                    <Tooltip>
+                      <TooltipContent>
+                        <p>Tablet - {devices[1]?.getWidthMedia()}</p>
+                      </TooltipContent>
+                      <TooltipTrigger asChild>
+                        <Button
+                          variant={"ghost"}
+                          className={`my-1 px-2 h-8 ${
+                            selected == "tablet" && "bg-white"
+                          }`}
+                          onClick={() => handleDevice(devices[1]?.id, select)}
+                        >
+                          <FaTabletScreenButton
+                            className={
+                              selected == "tablet" ? iconActive : iconInactive
+                            }
+                          />
+                        </Button>
+                      </TooltipTrigger>
+                    </Tooltip>
                   )}
                   {devices.length > 2 && (
-                    <Button
-                      variant={"ghost"}
-                      className={`my-1 px-2 h-8 ${
-                        selected == "mobileLandscape" && "bg-white"
-                      }`}
-                      title={devices[2].getName()}
-                      onClick={() => handleDevice(devices[2]?.id, select)}
-                    >
-                      <BiMobileLandscape
-                        className={
-                          selected == "mobileLandscape"
-                            ? iconActive
-                            : iconInactive
-                        }
-                      />
-                    </Button>
+                    <Tooltip>
+                      <TooltipContent>
+                        <p>Mobile Landscape - {devices[2]?.getWidthMedia()}</p>
+                      </TooltipContent>
+                      <TooltipTrigger asChild>
+                        <Button
+                          variant={"ghost"}
+                          className={`my-1 px-2 h-8 ${
+                            selected == "mobileLandscape" && "bg-white"
+                          }`}
+                          onClick={() => handleDevice(devices[2]?.id, select)}
+                        >
+                          <FaMobileAlt
+                            className={
+                              selected == "mobileLandscape"
+                                ? iconActive
+                                : iconInactive
+                            }
+                          />
+                        </Button>
+                      </TooltipTrigger>
+                    </Tooltip>
                   )}
                   {devices.length > 3 && (
-                    <Button
-                      variant={"ghost"}
-                      className={`my-1 px-2 h-8 ${
-                        selected == "mobilePortrait" && "bg-white"
-                      }`}
-                      title={devices[3].getName()}
-                      onClick={() => handleDevice(devices[3]?.id, select)}
-                    >
-                      <FaMobileAlt
-                        className={
-                          selected == "mobilePortrait"
-                            ? iconActive
-                            : iconInactive
-                        }
-                      />
-                    </Button>
+                    <Tooltip>
+                      <TooltipContent>
+                        <p>Mobile Portrait - {devices[3]?.getWidthMedia()}</p>
+                      </TooltipContent>
+                      <TooltipTrigger asChild>
+                        <Button
+                          variant={"ghost"}
+                          className={`my-1 px-2 h-8 ${
+                            selected == "mobilePortrait" && "bg-white"
+                          }`}
+                          onClick={() => handleDevice(devices[3]?.id, select)}
+                        >
+                          <BiMobileLandscape
+                            className={
+                              selected == "mobilePortrait"
+                                ? iconActive
+                                : iconInactive
+                            }
+                          />
+                        </Button>
+                      </TooltipTrigger>
+                    </Tooltip>
                   )}
                 </div>
               );
