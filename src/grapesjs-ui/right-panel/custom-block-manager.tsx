@@ -37,7 +37,7 @@ export default function CustomBlockManager({
                     onDragEnd={() => dragStop(false)}
                   >
                     <div
-                      className="h-10 w-10"
+                      className="min-h-10 min-w-10"
                       dangerouslySetInnerHTML={{ __html: block.getMedia()! }}
                     />
                     <div

@@ -1,4 +1,5 @@
 import { Editor } from "grapesjs";
+
 import { hero1 } from "./hero-1";
 import { hero2 } from "./hero-2";
 
@@ -12,7 +13,8 @@ export const heroSections = (editor: Editor) => {
     bm.add(`hero-sections-${index + 1}`, {
       category: "Hero Sections",
       label: `Hero ${index + 1}`,
-      content: item,
+      content: item.content,
+      media: `<img src="${item.thumbnail}" />`,
     });
   });
 };
