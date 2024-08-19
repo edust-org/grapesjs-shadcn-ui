@@ -62,11 +62,14 @@ export const RightButtons = () => {
     editor.on(cmdEvent, onCommand);
     editor.on(updateEvent, updateCounter);
 
+    // Set 'core:component-outline' to true by default
+    Commands.run("core:component-outline");
+
     return () => {
       editor.off(cmdEvent, onCommand);
       editor.off(updateEvent, updateCounter);
     };
-  }, [cmdButtons, editor]);
+  }, [Commands, cmdButtons, editor]);
 
   const handleButtons = ({ Commands, id, options }) => {
     if (id == "core:canvas-clear") {
