@@ -1,4 +1,4 @@
-import { PagesResultProps } from "@grapesjs/react";
+import { PagesResultProps, useEditor } from "@grapesjs/react";
 import { MdDelete } from "react-icons/md";
 
 export default function CustomPageManager({
@@ -8,11 +8,28 @@ export default function CustomPageManager({
   select,
   remove,
 }: PagesResultProps) {
+  const editor = useEditor();
+
   const addNewPage = () => {
-    const nextIndex = pages.length + 1;
+    const pn = prompt("What is your page name?");
+
+    if (!pn) {
+      return alert("Please give me your page name.");
+    }
+    const pageName = pn?.toLocaleLowerCase();
+
+    const pg = editor.Pages;
+    const pgs = pg.getAll().map((p) => {
+      return p?.attributes?.name?.toLowerCase();
+    });
+
+    if (pgs.includes(pageName)) {
+      return alert("Already page name exist.");
+    }
+
     add({
-      name: `New page ${nextIndex}`,
-      component: `<h1>Page content ${nextIndex}</h1>`,
+      name: pageName,
+      component: `<h1>Page content ${pageName}</h1>`,
     });
   };
 
