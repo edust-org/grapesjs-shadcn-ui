@@ -1,4 +1,4 @@
-import { BlocksResultProps } from "@grapesjs/react";
+import { BlocksResultProps, useEditor } from "@grapesjs/react";
 import {
   Accordion,
   AccordionContent,
@@ -16,6 +16,7 @@ export default function CustomBlockManager({
   dragStart,
   dragStop,
 }: CustomBlockManagerProps) {
+  const editor = useEditor();
   return (
     <div className="gjs-custom-block-manager text-left">
       <Accordion
@@ -39,9 +40,24 @@ export default function CustomBlockManager({
                     }
                     onDragStart={(ev) => dragStart(block, ev.nativeEvent)}
                     onDragEnd={() => dragStop(false)}
+                    // Click able block add
+                    onClick={() => {
+                      const selected = editor.getSelected();
+
+                      const content = block.get("content");
+                      if (selected) {
+                        if (content) {
+                          selected.append(content);
+                        }
+                      } else {
+                        if (content) {
+                          editor?.getWrapper().append(content);
+                        }
+                      }
+                    }}
                   >
                     <div
-                      className="min-h-10 min-w-10 max-w-40 max-h-40 object-cover"
+                      className="min-h-10 min-w-10 max-w-40 max-h-40 w-full p-2 flex items-center justify-center object-cover"
                       dangerouslySetInnerHTML={{ __html: block.getMedia()! }}
                     />
                     {block?.getLabel() && (

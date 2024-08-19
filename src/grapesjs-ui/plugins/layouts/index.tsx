@@ -28,7 +28,11 @@ export const layoutPlugin = (editor: Editor) => {
       name: "Section",
       attributes: { class: "w-full px-4 min-h-12" },
     },
-    media: `<svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 17 17" height="3em" width="3em" xmlns="http://www.w3.org/2000/svg"><g></g><path d="M1 0h3v17h-3v-17zM5 17h3v-17h-3v17zM9 17h3v-17h-3v17zM13 0v17h3v-17h-3z"></path></svg>`,
+    media: `<svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="12.5" y="21" width="175" height="94" stroke="#0F172A" stroke-width="9"/>
+<rect x="12" y="131.5" width="176" height="48" stroke="#0F172A" stroke-width="8"/>
+</svg>
+`,
   });
 
   // Container
@@ -41,7 +45,10 @@ export const layoutPlugin = (editor: Editor) => {
       name: "Container",
       attributes: { class: "container mx-auto px-4 min-h-12" },
     },
-    media: `<svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 17 17" height="3em" width="3em" xmlns="http://www.w3.org/2000/svg"><g></g><path d="M1 0h3v17h-3v-17zM5 17h3v-17h-3v17zM9 17h3v-17h-3v17zM13 0v17h3v-17h-3z"></path></svg>`,
+    media: `<svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="12" y="44.5" width="176" height="111" stroke="#0F172A" stroke-width="8"/>
+</svg>
+`,
   });
 
   // Col-1
@@ -60,7 +67,9 @@ export const layoutPlugin = (editor: Editor) => {
       ],
       attributes: { class: "grid gap-4 grid-cols-1" },
     },
-    media: `<svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 17 17" height="3em" width="3em" xmlns="http://www.w3.org/2000/svg"><g></g><path d="M1 0h3v17h-3v-17zM5 17h3v-17h-3v17zM9 17h3v-17h-3v17zM13 0v17h3v-17h-3z"></path></svg>`,
+    media: `<svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="58" y="12" width="84" height="176" stroke="#0F172A" stroke-width="8"/>
+</svg>`,
   });
 
   // Col-2
@@ -83,7 +92,11 @@ export const layoutPlugin = (editor: Editor) => {
       ],
       attributes: { class: "grid gap-4 grid-cols-1 md:grid-cols-2" },
     },
-    media: `<svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 17 17" height="3em" width="3em" xmlns="http://www.w3.org/2000/svg"><g></g><path d="M1 0h3v17h-3v-17zM5 17h3v-17h-3v17zM9 17h3v-17h-3v17zM13 0v17h3v-17h-3z"></path></svg>`,
+    media: `<svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="12" y="12" width="80" height="176" stroke="#0F172A" stroke-width="8"/>
+<rect x="108" y="12" width="80" height="176" stroke="#0F172A" stroke-width="8"/>
+</svg>
+`,
   });
 
   // Col-3
@@ -112,7 +125,12 @@ export const layoutPlugin = (editor: Editor) => {
         class: "grid gap-4 grid-cols-1 md:grid-cols-3",
       },
     },
-    media: `<svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 17 17" height="3em" width="3em" xmlns="http://www.w3.org/2000/svg"><g></g><path d="M1 0h3v17h-3v-17zM5 17h3v-17h-3v17zM9 17h3v-17h-3v17zM13 0v17h3v-17h-3z"></path></svg>`,
+    media: `<svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="12" y="12" width="48" height="176" stroke="#0F172A" stroke-width="8"/>
+<rect x="76" y="12" width="48" height="176" stroke="#0F172A" stroke-width="8"/>
+<rect x="140" y="12" width="48" height="176" stroke="#0F172A" stroke-width="8"/>
+</svg>
+`,
   });
 
   // Col-4
@@ -145,7 +163,13 @@ export const layoutPlugin = (editor: Editor) => {
         class: "grid gap-4 grid-cols-1 md:grid-cols-4",
       },
     },
-    media: `<svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 17 17" height="3em" width="3em" xmlns="http://www.w3.org/2000/svg"><g></g><path d="M1 0h3v17h-3v-17zM5 17h3v-17h-3v17zM9 17h3v-17h-3v17zM13 0v17h3v-17h-3z"></path></svg>`,
+    media: `<svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="12" y="12" width="32" height="176" stroke="#0F172A" stroke-width="8"/>
+<rect x="60" y="12" width="32" height="176" stroke="#0F172A" stroke-width="8"/>
+<rect x="108" y="12" width="32" height="176" stroke="#0F172A" stroke-width="8"/>
+<rect x="156" y="12" width="32" height="176" stroke="#0F172A" stroke-width="8"/>
+</svg>
+`,
   });
 
   // Div
