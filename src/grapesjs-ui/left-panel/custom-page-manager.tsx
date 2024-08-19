@@ -1,5 +1,5 @@
-import { PagesResultProps } from "@grapesjs/react";
-import { MdDelete } from "react-icons/md";
+import { PagesResultProps, useEditor } from "@grapesjs/react";
+import { MdDelete, MdEdit } from "react-icons/md";
 
 export default function CustomPageManager({
   pages,
@@ -8,12 +8,42 @@ export default function CustomPageManager({
   select,
   remove,
 }: PagesResultProps) {
+  const editor = useEditor();
+
   const addNewPage = () => {
-    const nextIndex = pages.length + 1;
-    add({
-      name: `New page ${nextIndex}`,
-      component: `<h1>Page content ${nextIndex}</h1>`,
+    const pn = prompt("What is your page name?");
+
+    if (!pn) {
+      return alert("Please give me your page name.");
+    }
+    const pageName = pn?.toLocaleLowerCase();
+
+    const pg = editor.Pages;
+    const pgs = pg.getAll().map((p) => {
+      return p?.attributes?.name?.toLowerCase();
     });
+
+    if (pgs.includes(pageName)) {
+      return alert("Already page name exist.");
+    }
+
+    add({
+      name: pageName,
+      component: `<h1>Page content ${pageName}</h1>`,
+    });
+  };
+
+  const handleEdit = (page) => {
+    // Log the current page data (including its name)
+    console.log("Page before update:", page);
+
+    // Update the page name
+    const newName = prompt("Enter the new page name:", page.get("name"));
+
+    // If the user provided a new name, update the page
+    if (newName && newName.trim()) {
+      page.set("name", newName);
+    }
   };
 
   return (
@@ -42,9 +72,14 @@ export default function CustomPageManager({
             {page.getName() || "Untitled page"}
           </button>
           {selected !== page && (
-            <button type="button" onClick={() => remove(page)}>
-              <MdDelete />
-            </button>
+            <>
+              <button type="button" onClick={() => remove(page)}>
+                <MdDelete />
+              </button>
+              <button type="button" onClick={() => handleEdit(page)}>
+                <MdEdit />
+              </button>
+            </>
           )}
         </div>
       ))}
