@@ -1,5 +1,5 @@
 import { PagesResultProps, useEditor } from "@grapesjs/react";
-import { MdDelete } from "react-icons/md";
+import { MdDelete, MdEdit } from "react-icons/md";
 
 export default function CustomPageManager({
   pages,
@@ -33,6 +33,19 @@ export default function CustomPageManager({
     });
   };
 
+  const handleEdit = (page) => {
+    // Log the current page data (including its name)
+    console.log("Page before update:", page);
+
+    // Update the page name
+    const newName = prompt("Enter the new page name:", page.get("name"));
+
+    // If the user provided a new name, update the page
+    if (newName && newName.trim()) {
+      page.set("name", newName);
+    }
+  };
+
   return (
     <div className="gjs-custom-page-manager">
       <div className="p-2">
@@ -59,9 +72,14 @@ export default function CustomPageManager({
             {page.getName() || "Untitled page"}
           </button>
           {selected !== page && (
-            <button type="button" onClick={() => remove(page)}>
-              <MdDelete />
-            </button>
+            <>
+              <button type="button" onClick={() => remove(page)}>
+                <MdDelete />
+              </button>
+              <button type="button" onClick={() => handleEdit(page)}>
+                <MdEdit />
+              </button>
+            </>
           )}
         </div>
       ))}
