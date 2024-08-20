@@ -28,6 +28,7 @@
     "grapesjs-blocks-basic": "^1.0.2",
     "grapesjs-custom-code": "^1.0.2",
     "grapesjs-plugin-export": "^1.0.12",
+    "grapesjs-tailwind": "^1.0.11",
     "grapesjs-tui-image-editor": "^1.0.2",
     "lucide-react": "^0.418.0",
     "react": "^18.3.1",
