@@ -3,6 +3,7 @@ import gsPluginBlocksBasic from "grapesjs-blocks-basic";
 import gsPluginTuiImageEditor from "grapesjs-tui-image-editor";
 import gsPluginExport from "grapesjs-plugin-export";
 import gsPluginCustomCode from "grapesjs-custom-code";
+import gsPluginTailwind from 'grapesjs-tailwind';
 import plugins from "./plugins";
 
 import uploadFile from "./upload-file";
@@ -76,6 +77,7 @@ const options = (editorRef: any): EditorConfig => ({
     gsPluginTuiImageEditor,
     gsPluginExport,
     ...plugins,
+    gsPluginTailwind,
     gsPluginCustomCode,
   ],
   pluginsOpts: {},
