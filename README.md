@@ -60,6 +60,33 @@ We welcome contributions! We value every contribution, no matter how big or smal
 3. Push to the branch (`git push`).
 4. Open a pull request.
 
+#### Image Placeholder
+
+<details>
+<summary>Via Placeholder</summary>
+
+https://via.placeholder.com/350x250/459ba8/fff
+
+Domain: https://via.placeholder.com
+
+Dimensions: /350x250
+
+Color: /459ba8/fff
+
+</details>
+<details>
+<summary>dummyimage</summary>
+
+https://dummyimage.com/720x600/459ba8/fff
+
+Domain: https://dummyimage.com
+
+Dimensions: /720x600
+
+Color: /459ba8/fff
+
+</details>
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
