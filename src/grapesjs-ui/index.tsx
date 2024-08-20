@@ -40,6 +40,8 @@ export const GrapesjsUI = () => {
         // GrapesJS init options
         options={options(editorRef)}
         onEditor={onEditor}
+      
+ 
       >
         {/* <div className="flex h-screen overflow-hidden">
           <LeftPanel />
