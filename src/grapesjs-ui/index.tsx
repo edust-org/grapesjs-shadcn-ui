@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import grapesjs, { Editor } from "grapesjs";
 import GjsEditor, { Canvas } from "@grapesjs/react";
 import { RightPanel } from "./right-panel";
@@ -40,20 +40,7 @@ export const GrapesjsUI = () => {
         // GrapesJS init options
         options={options(editorRef)}
         onEditor={onEditor}
-      
- 
       >
-        {/* <div className="flex h-screen overflow-hidden">
-          <LeftPanel />
-          <section className="flex-1 flex flex-col">
-            <TopControllers />
-            <Canvas className="bg-slate-200 p-2 2xl:p-4" />
-          </section>
-          <ScrollArea className="w-60 bg-slate-50 border-l">
-            <RightPanel />
-          </ScrollArea>
-        </div> */}
-
         <ResizablePanelGroup
           direction="horizontal"
           className="flex h-screen overflow-hidden"
