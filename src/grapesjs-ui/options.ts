@@ -1,5 +1,4 @@
 import { EditorConfig } from "grapesjs";
-import gsPluginBlocksBasic from "grapesjs-blocks-basic";
 import gsPluginTuiImageEditor from "grapesjs-tui-image-editor";
 import gsPluginExport from "grapesjs-plugin-export";
 import gsPluginCustomCode from "grapesjs-custom-code";
@@ -72,10 +71,9 @@ const options = (editorRef: any): EditorConfig => ({
   },
 
   plugins: [
-    gsPluginBlocksBasic,
+    ...plugins,
     gsPluginTuiImageEditor,
     gsPluginExport,
-    ...plugins,
     gsPluginCustomCode,
   ],
   pluginsOpts: {},
