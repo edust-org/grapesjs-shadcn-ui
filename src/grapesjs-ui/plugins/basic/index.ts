@@ -8,7 +8,7 @@ export const basicPlugin = (editor: Editor) => {
     category: "Basic",
     activate: true,
     content: {
-      type: "custom-type-image",
+      type: "ctb-image",
       name: "Image",
       alt: "Alternative Image Text",
       src: "",
@@ -18,7 +18,12 @@ export const basicPlugin = (editor: Editor) => {
       </svg>`,
   });
 
-  editor.DomComponents.addType("custom-type-image", {
+  /*
+  c= custom
+  t= type
+  b= basic
+  */
+  editor.DomComponents.addType("ctb-image", {
     isComponent: (el) => el.tagName === "IMG", // Check if it's an IMG tag
     model: {
       defaults: {
