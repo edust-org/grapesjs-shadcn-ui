@@ -247,7 +247,7 @@ export const eduCrafets001 = {
 
     <footer class="bg-[#114439] text-white py-4 md:py-8 lg:pt-20">
       <section
-        class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+        class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
       >
         <div class="space-y-4">
           <h1
