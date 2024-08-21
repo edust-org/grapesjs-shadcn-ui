@@ -8,7 +8,7 @@ export const basicPlugin = (editor: Editor) => {
     category: "Basic",
     activate: true,
     content: {
-      type: "image",
+      type: "custom-type-image",
       name: "Image",
       alt: "Alternative Image Text",
       src: "",
@@ -16,6 +16,34 @@ export const basicPlugin = (editor: Editor) => {
     media: `<svg viewBox="0 0 24 24">
         <path fill="currentColor" d="M21,3H3C2,3 1,4 1,5V19A2,2 0 0,0 3,21H21C22,21 23,20 23,19V5C23,4 22,3 21,3M5,17L8.5,12.5L11,15.5L14.5,11L19,17H5Z"></path>
       </svg>`,
+  });
+
+  editor.DomComponents.addType("custom-type-image", {
+    isComponent: (el) => el.tagName === "IMG", // Check if it's an IMG tag
+    model: {
+      defaults: {
+        tagName: "img", // Define the default tag
+        name: "Image",
+        attributes: {
+          src: "https://dummyimage.com/250x100/020817/ffffff", // Default image source
+          alt: "Alternative Image Text", // Default alt text
+        },
+        traits: [
+          {
+            type: "text",
+            label: "Image Source",
+            name: "src",
+            placeholder: "",
+          },
+          {
+            type: "text",
+            label: "Alt Text",
+            name: "alt",
+            placeholder: "Alternative text for image",
+          },
+        ],
+      },
+    },
   });
 
   blockManager.add("basic-video", {
