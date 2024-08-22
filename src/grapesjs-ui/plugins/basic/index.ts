@@ -18,38 +18,64 @@ export const basicPlugin = (editor: Editor) => {
       </svg>`,
   });
 
-  /*
-  c= custom
-  t= type
-  b= basic
-  */
-  editor.DomComponents.addType("ctb-image", {
-    isComponent: (el) => el.tagName === "IMG", // Check if it's an IMG tag
+  editor.DomComponents.addType("image", {
     model: {
       defaults: {
-        tagName: "img", // Define the default tag
-        name: "Image",
-        attributes: {
-          src: "https://dummyimage.com/250x100/020817/ffffff", // Default image source
-          alt: "Alternative Image Text", // Default alt text
-        },
         traits: [
           {
             type: "text",
-            label: "Image Source",
-            name: "src",
-            placeholder: "",
+            label: "alt",
+            name: "alt",
           },
           {
             type: "text",
-            label: "Alt Text",
-            name: "alt",
-            placeholder: "Alternative text for image",
+            label: "title",
+            name: "title",
+          },
+          {
+            type: "text",
+            label: "src",
+            name: "src",
           },
         ],
       },
     },
   });
+
+  /*
+
+  c= custom
+  t= type
+  b= basic
+  */
+
+  // editor.DomComponents.addType("ctb-image", {
+  //   isComponent: (el) => el.tagName === "IMG", // Check if it's an IMG tag
+  //   model: {
+  //     defaults: {
+  //       tagName: "img", // Define the default tag
+  //       name: "Image",
+  //       attributes: {
+  //         src: "https://dummyimage.com/250x100/020817/ffffff", // Default image source
+  //         alt: "Alternative Image Text", // Default alt text
+  //       },
+  //       traits: [
+  //         {
+  //           type: "text",
+  //           label: "Image Source",
+  //           name: "src",
+  //           placeholder: "",
+  //         },
+  //         {
+  //           type: "text",
+  //           label: "Alt Text",
+  //           name: "alt",
+  //           placeholder: "Alternative text for image",
+  //         },
+  //       ],
+  //     },
+  //   },
+  // });
 
   blockManager.add("basic-video", {
     label: "Video",
