@@ -1,6 +1,7 @@
 import { Editor } from "grapesjs";
 import { eduCrafets001 } from "./001-edu-crafters";
 
+// Import your template and add here [t1, t2, t3, ...]
 const items = [eduCrafets001];
 
 export const templatesPlugins = (editor: Editor) => {

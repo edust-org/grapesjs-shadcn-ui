@@ -60,6 +60,14 @@ We welcome contributions! We value every contribution, no matter how big or smal
 3. Push to the branch (`git push`).
 4. Open a pull request.
 
+#### For Beginner
+
+1. Create a small and beautiful educational landing page
+2. in local directory create **index.html** file using **tailwindCdn** then start
+3. Don't use external assets use cdn
+4. and go to `/src/grapesjs-ui/plugins/templates/{00_-name}`
+5. connect your template in `/src/grapesjs-ui/plugins/templates/index.ts`
+
 #### Image Placeholder
 
 <details>
