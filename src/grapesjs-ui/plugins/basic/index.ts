@@ -8,7 +8,7 @@ export const basicPlugin = (editor: Editor) => {
     category: "Basic",
     activate: true,
     content: {
-      type: "ctb-image",
+      type: "image",
       name: "Image",
       alt: "Alternative Image Text",
       src: "",
