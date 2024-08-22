@@ -47,7 +47,7 @@ If you have any questions or need help, feel free to ask in our [Discussion Foru
 
 ### 🔗 Community and Support
 
-We highly recommend joining our community on [Discord](https://discord.gg/k4V3QcpAZH). Whether you want to collaborate, get support, or contribute to the project, you’ll find everything you need in our community.
+We highly recommend joining our community on [Discord](https://discord.gg/vnhqmn9mdj). Whether you want to collaborate, get support, or contribute to the project, you’ll find everything you need in our community.
 
 ### 👥 Contributing
 
