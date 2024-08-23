@@ -1,10 +1,9 @@
 import { EditorConfig } from "grapesjs";
+import gsPluginBlocksBasic from "grapesjs-blocks-basic";
 import gsPluginTuiImageEditor from "grapesjs-tui-image-editor";
 import gsPluginExport from "grapesjs-plugin-export";
 import gsPluginCustomCode from "grapesjs-custom-code";
 import plugins from "./plugins";
-
-import uploadFile from "./upload-file";
 import template from "./template";
 import haveProjectData from "./utils/have-projectData";
 
@@ -23,7 +22,7 @@ const options = (editorRef: any): EditorConfig => ({
   assetManager: {
     uploadName: "file",
     // Disabled at this moment
-    // uploadFile: (e) => uploadFile(e, editorRef),
+    // uploadFile: (e) => useUploadFile(e, editorRef),
   },
   panels: { defaults: [] }, // Avoid default panels
 
@@ -71,6 +70,7 @@ const options = (editorRef: any): EditorConfig => ({
   },
 
   plugins: [
+    gsPluginBlocksBasic,
     ...plugins,
     gsPluginTuiImageEditor,
     gsPluginExport,

@@ -11,7 +11,7 @@ import {
   ResizablePanelGroup,
 } from "@/components/ui";
 import { LeftPanel } from "./left-panel";
-import useWindowSize from "./use-window-resize";
+import useWindowSize from "./hooks/use-window-resize";
 
 export const GrapesjsUI = () => {
   const { width: windowWidth } = useWindowSize();

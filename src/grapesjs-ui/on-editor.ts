@@ -1,5 +1,5 @@
 import { Editor } from "grapesjs";
-import appendTailwindCss from "./append-tailwindCss";
+import appendTailwindCss from "./hooks/use-append-tailwindCss";
 
 export default async (editor: Editor) => {
   {
@@ -34,8 +34,30 @@ export default async (editor: Editor) => {
       console.log("component:change");
     });
     */
-
-
+    // Customize image default type
+    editor.DomComponents.addType("image", {
+      model: {
+        defaults: {
+          traits: [
+            {
+              type: "text",
+              label: "alt",
+              name: "alt",
+            },
+            {
+              type: "text",
+              label: "title",
+              name: "title",
+            },
+            {
+              type: "text",
+              label: "src",
+              name: "src",
+            },
+          ],
+        },
+      },
+    });
 
     // Loaded TailwindCSS
     editor.Canvas.getModel()["on"]("change:frames", (_m, frames) => {

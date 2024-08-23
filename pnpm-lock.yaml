@@ -53,6 +53,9 @@ importers:
       grapesjs:
         specifier: ^0.21.12
         version: 0.21.12
+      grapesjs-blocks-basic:
+        specifier: ^1.0.2
+        version: 1.0.2
       grapesjs-custom-code:
         specifier: ^1.0.2
         version: 1.0.2
@@ -1332,6 +1335,9 @@ packages:
   globby@11.1.0:
     resolution: {integrity: sha512-jhIXaOzy1sb8IyocaruWSn1TjmnBVs8Ayhcy83rmxNJ8q2uWKCAj3CnJY+KpGSXCueAPc0i05kVvVKtP1t9S3g==}
     engines: {node: '>=10'}
+
+  grapesjs-blocks-basic@1.0.2:
+    resolution: {integrity: sha512-SsPKf/CvQkZ+kABOsN01auAPHXh/2J20g0AWYF7fHR3Gw3TZLtdIxT1mk90Qzi76u/7sUYi3CTI+i3ZaTtXHRA==}
 
   grapesjs-custom-code@1.0.2:
     resolution: {integrity: sha512-B8IZQyB+HjLb9HkHzQ+RVHE5Q6zqX7Ry8b+kYk8Jh7vjmPawe+/kL0pXYxYQ2bSmdaUEuq8mLngiNY+l6EFEVQ==}
@@ -3082,6 +3088,8 @@ snapshots:
       ignore: 5.3.2
       merge2: 1.4.1
       slash: 3.0.0
+
+  grapesjs-blocks-basic@1.0.2: {}
 
   grapesjs-custom-code@1.0.2: {}
 
