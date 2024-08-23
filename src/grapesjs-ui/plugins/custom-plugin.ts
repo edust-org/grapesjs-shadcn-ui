@@ -3,17 +3,41 @@ import { Editor } from "grapesjs";
 export const customPlugin = (editor: Editor) => {
   const blockManager = editor.BlockManager;
 
-  blockManager.add("custom-image", {
-    label: "Image",
-    category: "Custom",
-    activate: true,
-    content: {
-      type: "image",
-      name: "Image",
-      alt: "Alternative Image Text",
-      src: "",
-    },
-  });
+  // blockManager.add("custom-image", {
+  //   label: "Image",
+  //   category: "Custom",
+  //   activate: true,
+  //   content: {
+  //     type: "image",
+  //     name: "Image",
+  //     alt: "Alternative Image Text",
+  //     src: "",
+  //   },
+  // });
+
+  // editor.DomComponents.addType("image", {
+  //   model: {
+  //     defaults: {
+  //       traits: [
+  //         {
+  //           type: "text",
+  //           label: "alt",
+  //           name: "alt",
+  //         },
+  //         {
+  //           type: "text",
+  //           label: "title",
+  //           name: "title",
+  //         },
+  //         {
+  //           type: "text",
+  //           label: "src",
+  //           name: "src",
+  //         },
+  //       ],
+  //     },
+  //   },
+  // });
 
   blockManager.add("custom-video", {
     label: "Video",
