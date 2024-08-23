@@ -1,4 +1,11 @@
 import thumbnail from "./edu-crafters.avif";
+
+/**
+ * Who created this template?
+ * GitHub Profile: https://github.com/sheik-mostafizur
+ * Template id: 001
+ */
+
 export const eduCrafets001 = {
   id: "001",
   content: `
