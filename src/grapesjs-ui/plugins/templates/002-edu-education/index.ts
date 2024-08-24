@@ -284,22 +284,21 @@ export const eduEducation002 = {
                     Design 101: Product & Web Design Course
                   </h1></a
                 >
-                <span class="text-sm text-gray-400">Andrew paker</span>
+                <span class="text-sm text-[#2C3E50]">Andrew paker</span>
               </div>
             </div>
             <hr />
             <!-- student & rating -->
             <div
-              class="flex justify-between items-center gap-3 p-4 text-gray-400 text-sm"
+              class="flex justify-between items-center gap-3 p-4 text-[#2C3E50] text-sm"
             >
               <p><i class="ri-user-6-line"></i> Student</p>
 
               <div class="flex items-center gap-1">
-                <i class="ri-star-fill text-orange-500"></i>
-                <i class="ri-star-fill text-orange-500"></i>
-                <i class="ri-star-fill text-orange-500"></i>
-                <i class="ri-star-fill text-gray-400"></i>
-                <i class="ri-star-fill text-gray-400"></i>
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>
+                <img width="48" height="48" src="https://img.icons8.com/ios-glyphs/48/4D4D4D/star.png" alt="star"/><img width="48" height="48" src="https://img.icons8.com/ios-glyphs/48/4D4D4D/star.png" alt="star"/>
                 <span class="text-sm">(3)</span>
               </div>
             </div>
@@ -334,22 +333,21 @@ export const eduEducation002 = {
                     Design 101: Product & Web Design Course
                   </h1></a
                 >
-                <span class="text-sm text-gray-400">Andrew paker</span>
+                <span class="text-sm text-[#2C3E50]">Andrew paker</span>
               </div>
             </div>
             <hr />
             <!-- student & rating -->
             <div
-              class="flex justify-between items-center gap-3 p-4 text-gray-400 text-sm"
+              class="flex justify-between items-center gap-3 p-4 text-[#2C3E50] text-sm"
             >
               <p><i class="ri-user-6-line"></i> Student</p>
 
               <div class="flex items-center gap-1">
-                <i class="ri-star-fill text-orange-500"></i>
-                <i class="ri-star-fill text-orange-500"></i>
-                <i class="ri-star-fill text-orange-500"></i>
-                <i class="ri-star-fill text-gray-400"></i>
-                <i class="ri-star-fill text-gray-400"></i>
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>
+                <img width="48" height="48" src="https://img.icons8.com/ios-glyphs/48/4D4D4D/star.png" alt="star"/><img width="48" height="48" src="https://img.icons8.com/ios-glyphs/48/4D4D4D/star.png" alt="star"/>
                 <span class="text-sm">(3)</span>
               </div>
             </div>
@@ -384,22 +382,21 @@ export const eduEducation002 = {
                     Design 101: Product & Web Design Course
                   </h1></a
                 >
-                <span class="text-sm text-gray-400">Andrew paker</span>
+                <span class="text-sm text-[#2C3E50]">Andrew paker</span>
               </div>
             </div>
             <hr />
             <!-- student & rating -->
             <div
-              class="flex justify-between items-center gap-3 p-4 text-gray-400 text-sm"
+              class="flex justify-between items-center gap-3 p-4 text-[#2C3E50] text-sm"
             >
               <p><i class="ri-user-6-line"></i> Student</p>
 
               <div class="flex items-center gap-1">
-                <i class="ri-star-fill text-orange-500"></i>
-                <i class="ri-star-fill text-orange-500"></i>
-                <i class="ri-star-fill text-orange-500"></i>
-                <i class="ri-star-fill text-gray-400"></i>
-                <i class="ri-star-fill text-gray-400"></i>
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>
+                <img width="48" height="48" src="https://img.icons8.com/ios-glyphs/48/4D4D4D/star.png" alt="star"/><img width="48" height="48" src="https://img.icons8.com/ios-glyphs/48/4D4D4D/star.png" alt="star"/>
                 <span class="text-sm">(3)</span>
               </div>
             </div>
@@ -434,22 +431,21 @@ export const eduEducation002 = {
                     Design 101: Product & Web Design Course
                   </h1></a
                 >
-                <span class="text-sm text-gray-400">Andrew paker</span>
+                <span class="text-sm text-[#2C3E50]">Andrew paker</span>
               </div>
             </div>
             <hr />
             <!-- student & rating -->
             <div
-              class="flex justify-between items-center gap-3 p-4 text-gray-400 text-sm"
+              class="flex justify-between items-center gap-3 p-4 text-[#2C3E50] text-sm"
             >
               <p><i class="ri-user-6-line"></i> Student</p>
 
               <div class="flex items-center gap-1">
-                <i class="ri-star-fill text-orange-500"></i>
-                <i class="ri-star-fill text-orange-500"></i>
-                <i class="ri-star-fill text-orange-500"></i>
-                <i class="ri-star-fill text-gray-400"></i>
-                <i class="ri-star-fill text-gray-400"></i>
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>
+                <img width="48" height="48" src="https://img.icons8.com/ios-glyphs/48/4D4D4D/star.png" alt="star"/><img width="48" height="48" src="https://img.icons8.com/ios-glyphs/48/4D4D4D/star.png" alt="star"/>
                 <span class="text-sm">(3)</span>
               </div>
             </div>
@@ -484,22 +480,21 @@ export const eduEducation002 = {
                     Design 101: Product & Web Design Course
                   </h1></a
                 >
-                <span class="text-sm text-gray-400">Andrew paker</span>
+                <span class="text-sm text-[#2C3E50]">Andrew paker</span>
               </div>
             </div>
             <hr />
             <!-- student & rating -->
             <div
-              class="flex justify-between items-center gap-3 p-4 text-gray-400 text-sm"
+              class="flex justify-between items-center gap-3 p-4 text-[#2C3E50] text-sm"
             >
               <p><i class="ri-user-6-line"></i> Student</p>
 
               <div class="flex items-center gap-1">
-                <i class="ri-star-fill text-orange-500"></i>
-                <i class="ri-star-fill text-orange-500"></i>
-                <i class="ri-star-fill text-orange-500"></i>
-                <i class="ri-star-fill text-gray-400"></i>
-                <i class="ri-star-fill text-gray-400"></i>
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>
+                <img width="48" height="48" src="https://img.icons8.com/ios-glyphs/48/4D4D4D/star.png" alt="star"/><img width="48" height="48" src="https://img.icons8.com/ios-glyphs/48/4D4D4D/star.png" alt="star"/>
                 <span class="text-sm">(3)</span>
               </div>
             </div>
