@@ -295,10 +295,10 @@ export const eduEducation002 = {
               <p><i class="ri-user-6-line"></i> Student</p>
 
               <div class="flex items-center gap-1">
-                <img width="30" height="30" src="https://img.icons8.com/fluency/30/star--v1.png" alt="star--v1"/>
-                <img width="30" height="30" src="https://img.icons8.com/fluency/30/star--v1.png" alt="star--v1"/>
-                <img width="30" height="30" src="https://img.icons8.com/fluency/30/star--v1.png" alt="star--v1"/>
-                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/4D4D4D/star.png" alt="star"/><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/4D4D4D/star.png" alt="star"/>
+                <img width="18" height="18" src="https://img.icons8.com/fluency/16/star--v1.png" alt="star--v1"/>
+                <img width="18" height="18" src="https://img.icons8.com/fluency/16/star--v1.png" alt="star--v1"/>
+                <img width="18" height="18" src="https://img.icons8.com/fluency/16/star--v1.png" alt="star--v1"/>
+                <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/4D4D4D/star.png" alt="star"/><img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/4D4D4D/star.png" alt="star"/>
                 <span class="text-sm">(3)</span>
               </div>
             </div>
@@ -344,10 +344,10 @@ export const eduEducation002 = {
               <p><i class="ri-user-6-line"></i> Student</p>
 
               <div class="flex items-center gap-1">
-                <img width="30" height="30" src="https://img.icons8.com/fluency/30/star--v1.png" alt="star--v1"/>
-                <img width="30" height="30" src="https://img.icons8.com/fluency/30/star--v1.png" alt="star--v1"/>
-                <img width="30" height="30" src="https://img.icons8.com/fluency/30/star--v1.png" alt="star--v1"/>
-                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/4D4D4D/star.png" alt="star"/><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/4D4D4D/star.png" alt="star"/>
+                <img width="18" height="18" src="https://img.icons8.com/fluency/16/star--v1.png" alt="star--v1"/>
+                <img width="18" height="18" src="https://img.icons8.com/fluency/16/star--v1.png" alt="star--v1"/>
+                <img width="18" height="18" src="https://img.icons8.com/fluency/16/star--v1.png" alt="star--v1"/>
+                <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/4D4D4D/star.png" alt="star"/><img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/4D4D4D/star.png" alt="star"/>
                 <span class="text-sm">(3)</span>
               </div>
             </div>
@@ -393,10 +393,10 @@ export const eduEducation002 = {
               <p><i class="ri-user-6-line"></i> Student</p>
 
               <div class="flex items-center gap-1">
-                <img width="30" height="30" src="https://img.icons8.com/fluency/30/star--v1.png" alt="star--v1"/>
-                <img width="30" height="30" src="https://img.icons8.com/fluency/30/star--v1.png" alt="star--v1"/>
-                <img width="30" height="30" src="https://img.icons8.com/fluency/30/star--v1.png" alt="star--v1"/>
-                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/4D4D4D/star.png" alt="star"/><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/4D4D4D/star.png" alt="star"/>
+                <img width="18" height="18" src="https://img.icons8.com/fluency/16/star--v1.png" alt="star--v1"/>
+                <img width="18" height="18" src="https://img.icons8.com/fluency/16/star--v1.png" alt="star--v1"/>
+                <img width="18" height="18" src="https://img.icons8.com/fluency/16/star--v1.png" alt="star--v1"/>
+                <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/4D4D4D/star.png" alt="star"/><img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/4D4D4D/star.png" alt="star"/>
                 <span class="text-sm">(3)</span>
               </div>
             </div>
@@ -442,10 +442,10 @@ export const eduEducation002 = {
               <p><i class="ri-user-6-line"></i> Student</p>
 
               <div class="flex items-center gap-1">
-                <img width="30" height="30" src="https://img.icons8.com/fluency/30/star--v1.png" alt="star--v1"/>
-                <img width="30" height="30" src="https://img.icons8.com/fluency/30/star--v1.png" alt="star--v1"/>
-                <img width="30" height="30" src="https://img.icons8.com/fluency/30/star--v1.png" alt="star--v1"/>
-                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/4D4D4D/star.png" alt="star"/><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/4D4D4D/star.png" alt="star"/>
+                <img width="18" height="18" src="https://img.icons8.com/fluency/16/star--v1.png" alt="star--v1"/>
+                <img width="18" height="18" src="https://img.icons8.com/fluency/16/star--v1.png" alt="star--v1"/>
+                <img width="18" height="18" src="https://img.icons8.com/fluency/16/star--v1.png" alt="star--v1"/>
+                <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/4D4D4D/star.png" alt="star"/><img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/4D4D4D/star.png" alt="star"/>
                 <span class="text-sm">(3)</span>
               </div>
             </div>
@@ -491,10 +491,10 @@ export const eduEducation002 = {
               <p><i class="ri-user-6-line"></i> Student</p>
 
               <div class="flex items-center gap-1">
-                <img width="30" height="30" src="https://img.icons8.com/fluency/30/star--v1.png" alt="star--v1"/>
-                <img width="30" height="30" src="https://img.icons8.com/fluency/30/star--v1.png" alt="star--v1"/>
-                <img width="30" height="30" src="https://img.icons8.com/fluency/30/star--v1.png" alt="star--v1"/>
-                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/4D4D4D/star.png" alt="star"/><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/4D4D4D/star.png" alt="star"/>
+                <img width="18" height="18" src="https://img.icons8.com/fluency/16/star--v1.png" alt="star--v1"/>
+                <img width="18" height="18" src="https://img.icons8.com/fluency/16/star--v1.png" alt="star--v1"/>
+                <img width="18" height="18" src="https://img.icons8.com/fluency/16/star--v1.png" alt="star--v1"/>
+                <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/4D4D4D/star.png" alt="star"/><img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/4D4D4D/star.png" alt="star"/>
                 <span class="text-sm">(3)</span>
               </div>
             </div>
