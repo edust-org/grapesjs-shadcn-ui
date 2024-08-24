@@ -530,7 +530,7 @@ export const eduEducation002 = {
           <h1 class="font-bold text-3xl lg:text-4xl lg:mr-10 text-cyan-900">
             Thousands of courses authored by industry experts
           </h1>
-          <ul class="text-gray-400 *:flex *:items-center *:gap-2">
+          <ul class="text-gray-600 *:flex *:items-center *:gap-2">
             <li>
               <i class="ri-check-line text-cyan-500 font-bold text-xl"></i> Get
               access to 4,000+ of our top courses
@@ -749,7 +749,7 @@ export const eduEducation002 = {
             </button>
             <div>
               <h3 class="text-xl font-semibold text-black">Martney Holder</h3>
-              <p class="text-gray-400">IT Specailist</p>
+              <p class="text-gray-600">IT Specailist</p>
             </div>
           </div>
         </div>
@@ -773,7 +773,7 @@ export const eduEducation002 = {
             </button>
             <div>
               <h3 class="text-xl font-semibold text-black">Martney Holder</h3>
-              <p class="text-gray-400">IT Specailist</p>
+              <p class="text-gray-600">IT Specailist</p>
             </div>
           </div>
         </div>
@@ -797,7 +797,7 @@ export const eduEducation002 = {
             </button>
             <div>
               <h3 class="text-xl font-semibold text-black">Martney Holder</h3>
-              <p class="text-gray-400">IT Specailist</p>
+              <p class="text-gray-600">IT Specailist</p>
             </div>
           </div>
         </div>
