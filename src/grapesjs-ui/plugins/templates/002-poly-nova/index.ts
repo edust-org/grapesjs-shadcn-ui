@@ -174,7 +174,7 @@ export const polyNova002 = {
 
       <section class="pt-8 md:mt-20 py-20 bg-slate-50">
         <h2
-          class="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors first:mt-0 text-center px-4 mb-4"
+          class="scroll-m-20 text-3xl md:text-4xl font-semibold tracking-tight transition-colors first:mt-0 text-center px-4 mb-4"
         >
           Our Gallery
         </h2>
@@ -228,7 +228,7 @@ export const polyNova002 = {
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117658.79381577666!2d89.44986410388584!3d22.845507951947837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff9071cb47152f%3A0xf04b212290718952!2sKhulna!5e0!3m2!1sen!2sbd!4v1724408405444!5m2!1sen!2sbd"
           width="100%"
-          height="300"
+          height="500"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
