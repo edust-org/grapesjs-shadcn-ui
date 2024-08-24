@@ -2,45 +2,6 @@ import thumbnail from "./education.avif";
 export const eduEducation002 = {
   id: "002",
   content: `
-  <!-- header start -->
-    <header class="bg-white py-3 shadow-sm text-black">
-      <nav
-        class="container mx-auto px-4 flex justify-between items-center gap-6"
-      >
-        <!-- logo -->
-        <div>
-          <a href="#" class="font-bold text-2xl lg:text-3xl text-cyan-500"
-            >Education</a
-          >
-        </div>
-        <!-- menu -->
-        <ul
-          class="hidden md:flex justify-between items-center gap-4 md:gap-6 font-medium text-black"
-        >
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Pages</a></li>
-          <li><a href="#">Courses</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <!-- search -->
-        <form>
-          <input
-            type="text"
-            placeholder="Search Courses..."
-            class="ring-1 ring-gray-200 px-4 py-2 rounded-md outline-none placeholder:text-sm"
-          />
-        </form>
-
-        <!-- humberger menu -->
-        <button
-          class="md:hidden text-2xl ring-1 ring-cyan-500 rounded-md p-4 size-8 flex justify-center items-center transition-all duration-300 ease-linear hover:bg-cyan-500 hover:text-white"
-        >
-          <i class="ri-menu-4-line"></i>
-        </button>
-      </nav>
-    </header>
-    <!-- header end -->
 
     <!-- banner start -->
     <section
@@ -76,7 +37,7 @@ export const eduEducation002 = {
 
         <!-- banner image -->
         <div class="hidden lg:inline-block">
-          <img src="./images/hero-2.png" alt="hero-2" />
+          <img src="https://i.ibb.co/grbr5NZ/hero-2.png" alt="hero-2" />
         </div>
       </div>
     </section>
@@ -95,7 +56,7 @@ export const eduEducation002 = {
           <div>
             <img
               class="w-14 h-auto object-cover"
-              src="./images/icon-8.png"
+              src="https://i.ibb.co/jbV07Sw/icon-8.png"
               alt="icon-8"
             />
           </div>
@@ -114,7 +75,7 @@ export const eduEducation002 = {
           <div>
             <img
               class="w-14 h-auto object-cover"
-              src="./images/icon-9.png"
+              src="https://i.ibb.co/L6Pw72L/icon-9.png"
               alt="icon-9"
             />
           </div>
@@ -132,7 +93,7 @@ export const eduEducation002 = {
           <div>
             <img
               class="w-14 h-auto object-cover"
-              src="./images/icon-10.png"
+              src="https://i.ibb.co/d7Fkk1X/icon-10.png"
               alt="icon-10"
             />
           </div>
@@ -175,7 +136,7 @@ export const eduEducation002 = {
           >
             <img
               class="w-16 h-auto object-cover"
-              src="./images/icon-11.png"
+              src="https://i.ibb.co/5KHPx0M/icon-11.png"
               alt="icon-11"
             />
             <h3
@@ -190,7 +151,7 @@ export const eduEducation002 = {
           >
             <img
               class="w-16 h-auto object-cover"
-              src="./images/icon-18.png"
+              src="https://i.ibb.co/mGkJDKd/icon-18.png"
               alt="icon-18"
             />
             <h3
@@ -205,7 +166,7 @@ export const eduEducation002 = {
           >
             <img
               class="w-16 h-auto object-cover"
-              src="./images/icon-17.png"
+              src="https://i.ibb.co/QdQQ5zP/icon-17.png"
               alt="icon-17"
             />
             <h3
@@ -220,7 +181,7 @@ export const eduEducation002 = {
           >
             <img
               class="w-16 h-auto object-cover"
-              src="./images/icon-14.png"
+              src="https://i.ibb.co/SRJ7BF9/icon-14.png"
               alt="icon-14"
             />
             <h3
@@ -235,7 +196,7 @@ export const eduEducation002 = {
           >
             <img
               class="w-16 h-auto object-cover"
-              src="./images/icon-12.png"
+              src="https://i.ibb.co/DKX2xVn/icon-12.png"
               alt="icon-12"
             />
             <h3
@@ -250,7 +211,7 @@ export const eduEducation002 = {
           >
             <img
               class="w-16 h-auto object-cover"
-              src="./images/icon-13.png"
+              src="https://i.ibb.co/FJMxhKZ/icon-13.png"
               alt="icon-13"
             />
             <h3
@@ -265,7 +226,7 @@ export const eduEducation002 = {
           >
             <img
               class="w-16 h-auto object-cover"
-              src="./images/icon-16.png"
+              src="https://i.ibb.co/d460H0S/icon-16.png"
               alt="icon-16"
             />
             <h3
@@ -300,7 +261,7 @@ export const eduEducation002 = {
             <!-- image -->
             <img
               class="w-full h-[320px] md:h-[300px] lg:h-[220px] object-cover rounded-md group-hover:scale-[1.02] transition-all duration-300 ease-linear cursor-pointer"
-              src="./images/web-design.avif"
+              src="https://i.ibb.co/ZffhCTZ/web-design.jpg"
               alt="web-design"
             />
             <!-- content -->
@@ -350,7 +311,7 @@ export const eduEducation002 = {
             <!-- image -->
             <img
               class="w-full h-[320px] md:h-[300px] lg:h-[220px] object-cover rounded-md group-hover:scale-[1.02] transition-all duration-300 ease-linear cursor-pointer"
-              src="./images/web-design.avif"
+              src="https://i.ibb.co/ZffhCTZ/web-design.jpg"
               alt="web-design"
             />
             <!-- content -->
@@ -400,7 +361,7 @@ export const eduEducation002 = {
             <!-- image -->
             <img
               class="w-full h-[320px] md:h-[300px] lg:h-[220px] object-cover rounded-md group-hover:scale-[1.02] transition-all duration-300 ease-linear cursor-pointer"
-              src="./images/web-design.avif"
+              src="https://i.ibb.co/ZffhCTZ/web-design.jpg"
               alt="web-design"
             />
             <!-- content -->
@@ -450,7 +411,7 @@ export const eduEducation002 = {
             <!-- image -->
             <img
               class="w-full h-[320px] md:h-[300px] lg:h-[220px] object-cover rounded-md group-hover:scale-[1.02] transition-all duration-300 ease-linear cursor-pointer"
-              src="./images/web-design.avif"
+              src="https://i.ibb.co/ZffhCTZ/web-design.jpg"
               alt="web-design"
             />
             <!-- content -->
@@ -500,7 +461,7 @@ export const eduEducation002 = {
             <!-- image -->
             <img
               class="w-full h-[320px] md:h-[300px] lg:h-[220px] object-cover rounded-md group-hover:scale-[1.02] transition-all duration-300 ease-linear cursor-pointer"
-              src="./images/web-design.avif"
+              src="https://i.ibb.co/ZffhCTZ/web-design.jpg"
               alt="web-design"
             />
             <!-- content -->
@@ -620,7 +581,7 @@ export const eduEducation002 = {
           >
             <img
               class="w-full h-full object-cover"
-              src="./images/web-design.avif"
+              src="https://i.ibb.co/ZffhCTZ/web-design.jpg"
               alt="web-design"
             />
             <!-- course content -->
@@ -648,7 +609,7 @@ export const eduEducation002 = {
           >
             <img
               class="w-full h-full object-cover"
-              src="./images/web-design.avif"
+              src="https://i.ibb.co/ZffhCTZ/web-design.jpg"
               alt="web-design"
             />
             <!-- course content -->
@@ -676,7 +637,7 @@ export const eduEducation002 = {
           >
             <img
               class="w-full h-full object-cover"
-              src="./images/web-design.avif"
+              src="https://i.ibb.co/ZffhCTZ/web-design.jpg"
               alt="web-design"
             />
             <!-- course content -->
@@ -704,7 +665,7 @@ export const eduEducation002 = {
           >
             <img
               class="w-full h-full object-cover"
-              src="./images/web-design.avif"
+              src="https://i.ibb.co/ZffhCTZ/web-design.jpg"
               alt="web-design"
             />
             <!-- course content -->
@@ -732,7 +693,7 @@ export const eduEducation002 = {
           >
             <img
               class="w-full h-full object-cover"
-              src="./images/web-design.avif"
+              src="https://i.ibb.co/ZffhCTZ/web-design.jpg"
               alt="web-design"
             />
             <!-- course content -->
@@ -865,24 +826,24 @@ export const eduEducation002 = {
           <!-- brand -->
           <img
             class="size-20 object-fill grayscale transition-all duration-300 ease-linear hover:cursor-pointer hover:grayscale-0"
-            src="./images/brand/brand-1.png"
+            src="https://i.ibb.co/410pgft/brand-1.png"
             alt="brand-1"
           />
           <img
             class="size-20 object-fill grayscale transition-all duration-300 ease-linear hover:cursor-pointer hover:grayscale-0"
-            src="./images/brand/brand-2.png"
+            src="https://i.ibb.co/dGgdXB0/brand-2.png"
             alt="brand-2"
           /><img
             class="size-20 object-fill grayscale transition-all duration-300 ease-linear hover:cursor-pointer hover:grayscale-0"
-            src="./images/brand/brand-3.png"
+            src="https://i.ibb.co/PZ9FsFz/brand-3.png"
             alt="brand-3"
           /><img
             class="size-20 object-fill grayscale transition-all duration-300 ease-linear hover:cursor-pointer hover:grayscale-0"
-            src="./images/brand/brand-4.png"
+            src="https://i.ibb.co/ZYJnByK/brand-4.png"
             alt="brand-4"
           /><img
             class="size-20 object-fill grayscale transition-all duration-300 ease-linear hover:cursor-pointer hover:grayscale-0"
-            src="./images/brand/brand-5.png"
+            src="https://i.ibb.co/F8CDc6y/brand-5.png"
             alt="brand-5"
           />
         </div>
