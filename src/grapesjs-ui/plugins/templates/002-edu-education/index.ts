@@ -526,7 +526,7 @@ export const eduEducation002 = {
         <!-- image -->
         <img
           class="w-full max-w-[500px] mx-auto h-auto object-cover"
-          src="./images/cta-1.png"
+          src="https://i.ibb.co/n7NVcL5/cta-1.png"
           alt="cta-1"
         />
 
@@ -738,7 +738,7 @@ export const eduEducation002 = {
         <div class="bg-slate-100 p-8 rounded-md relative space-y-6">
           <img
             class="size-32 object-cover rounded-full absolute left-[32px] -top-[65px]"
-            src="./images/author-1.jpg"
+            src="https://i.ibb.co/n7NVcL5/cta-1.png"
             alt="author-1"
           />
           <p class="text-xl text-black font-normal pt-10">
@@ -762,7 +762,7 @@ export const eduEducation002 = {
         <div class="bg-slate-100 p-8 rounded-md relative space-y-6">
           <img
             class="size-32 object-cover rounded-full absolute left-[32px] -top-[65px]"
-            src="./images/author-1.jpg"
+            src="https://i.ibb.co/n7NVcL5/cta-1.png"
             alt="author-1"
           />
           <p class="text-xl text-black font-normal pt-10">
@@ -786,7 +786,7 @@ export const eduEducation002 = {
         <div class="bg-slate-100 p-8 rounded-md relative space-y-6">
           <img
             class="size-32 object-cover rounded-full absolute left-[32px] -top-[65px]"
-            src="./images/author-1.jpg"
+            src="https://i.ibb.co/n7NVcL5/cta-1.png"
             alt="author-1"
           />
           <p class="text-xl text-black font-normal pt-10">
