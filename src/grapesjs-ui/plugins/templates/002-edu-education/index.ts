@@ -748,7 +748,7 @@ export const eduEducation002 = {
 
           <div class="flex items-center gap-3 md:gap-5">
             <button
-              class="flex justify-center items-center p-4 bg-cyan-500 rounded-full size-16"
+              class="flex justify-center items-center p-4 bg-white shadow-sm rounded-full size-16"
             >
               <img width="50" height="50" src="https://img.icons8.com/sf-regular-filled/50/22C3E6/quote-left.png" alt="quote-left"/>
             </button>
@@ -772,7 +772,7 @@ export const eduEducation002 = {
 
           <div class="flex items-center gap-3 md:gap-5">
             <button
-              class="flex justify-center items-center p-4 bg-cyan-500 rounded-full size-16"
+              class="flex justify-center items-center p-4 bg-white shadow-sm rounded-full size-16"
             >
               <img width="50" height="50" src="https://img.icons8.com/sf-regular-filled/50/22C3E6/quote-left.png" alt="quote-left"/>
             </button>
@@ -796,7 +796,7 @@ export const eduEducation002 = {
 
           <div class="flex items-center gap-3 md:gap-5">
             <button
-              class="flex justify-center items-center p-4 bg-cyan-500 rounded-full size-16"
+              class="flex justify-center items-center p-4 bg-white shadow-sm rounded-full size-16"
             >
               <img width="50" height="50" src="https://img.icons8.com/sf-regular-filled/50/22C3E6/quote-left.png" alt="quote-left"/>
             </button>
