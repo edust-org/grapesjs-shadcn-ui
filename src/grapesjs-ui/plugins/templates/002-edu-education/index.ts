@@ -592,7 +592,7 @@ export const eduEducation002 = {
                 href="https://www.youtube.com/watch?v=3VcmZ3anN1I&list=PLNMnAEqLBwmqKGMJOtVcvGE-QrAte_95q"
                 target="_blank"
                 ><button class="text-5xl text-white">
-                  <i class="ri-play-circle-fill"></i></button
+                  <img width="48" height="48" src="https://img.icons8.com/color-glass/48/circled-play.png" alt="circled-play"/></button
               ></a>
               <a href="#">
                 <h2
@@ -620,7 +620,7 @@ export const eduEducation002 = {
                 href="https://www.youtube.com/watch?v=3VcmZ3anN1I&list=PLNMnAEqLBwmqKGMJOtVcvGE-QrAte_95q"
                 target="_blank"
                 ><button class="text-5xl text-white">
-                  <i class="ri-play-circle-fill"></i></button
+                  <img width="48" height="48" src="https://img.icons8.com/color-glass/48/circled-play.png" alt="circled-play"/></button
               ></a>
               <a href="#">
                 <h2
@@ -648,7 +648,7 @@ export const eduEducation002 = {
                 href="https://www.youtube.com/watch?v=3VcmZ3anN1I&list=PLNMnAEqLBwmqKGMJOtVcvGE-QrAte_95q"
                 target="_blank"
                 ><button class="text-5xl text-white">
-                  <i class="ri-play-circle-fill"></i></button
+                  <img width="48" height="48" src="https://img.icons8.com/color-glass/48/circled-play.png" alt="circled-play"/></button
               ></a>
               <a href="#">
                 <h2
@@ -676,7 +676,7 @@ export const eduEducation002 = {
                 href="https://www.youtube.com/watch?v=3VcmZ3anN1I&list=PLNMnAEqLBwmqKGMJOtVcvGE-QrAte_95q"
                 target="_blank"
                 ><button class="text-5xl text-white">
-                  <i class="ri-play-circle-fill"></i></button
+                  <img width="48" height="48" src="https://img.icons8.com/color-glass/48/circled-play.png" alt="circled-play"/></button
               ></a>
               <a href="#">
                 <h2
@@ -704,7 +704,7 @@ export const eduEducation002 = {
                 href="https://www.youtube.com/watch?v=3VcmZ3anN1I&list=PLNMnAEqLBwmqKGMJOtVcvGE-QrAte_95q"
                 target="_blank"
                 ><button class="text-5xl text-white">
-                  <i class="ri-play-circle-fill"></i></button
+                  <img width="48" height="48" src="https://img.icons8.com/color-glass/48/circled-play.png" alt="circled-play"/></button
               ></a>
               <a href="#">
                 <h2
@@ -750,7 +750,7 @@ export const eduEducation002 = {
             <button
               class="flex justify-center items-center p-4 bg-cyan-500 rounded-full size-16"
             >
-              <i class="ri-double-quotes-l text-white text-4xl"></i>
+              <img width="50" height="50" src="https://img.icons8.com/sf-regular-filled/50/22C3E6/quote-left.png" alt="quote-left"/>
             </button>
             <div>
               <h3 class="text-xl font-semibold text-black">Martney Holder</h3>
@@ -774,7 +774,7 @@ export const eduEducation002 = {
             <button
               class="flex justify-center items-center p-4 bg-cyan-500 rounded-full size-16"
             >
-              <i class="ri-double-quotes-l text-white text-4xl"></i>
+              <img width="50" height="50" src="https://img.icons8.com/sf-regular-filled/50/22C3E6/quote-left.png" alt="quote-left"/>
             </button>
             <div>
               <h3 class="text-xl font-semibold text-black">Martney Holder</h3>
@@ -798,7 +798,7 @@ export const eduEducation002 = {
             <button
               class="flex justify-center items-center p-4 bg-cyan-500 rounded-full size-16"
             >
-              <i class="ri-double-quotes-l text-white text-4xl"></i>
+              <img width="50" height="50" src="https://img.icons8.com/sf-regular-filled/50/22C3E6/quote-left.png" alt="quote-left"/>
             </button>
             <div>
               <h3 class="text-xl font-semibold text-black">Martney Holder</h3>
