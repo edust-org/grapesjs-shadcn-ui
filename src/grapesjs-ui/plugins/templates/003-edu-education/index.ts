@@ -4,11 +4,11 @@ import thumbnail from "./education.avif";
  * Md. Mehedi Hassan?
  * GitHub Profile: https://github.com/dreammehedi
  * Personal Portfolio: https://mehedihassan.vercel.app/
- * Template id: 002
+ * Template id: 003
  */
 
-export const eduEducation002 = {
-  id: "002",
+export const eduEducation003 = {
+  id: "003",
   content: `
 
     <!-- banner start -->
