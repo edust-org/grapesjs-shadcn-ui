@@ -51,7 +51,7 @@ export default function CustomBlockManager({
                         }
                       } else {
                         if (content) {
-                          editor?.getWrapper().append(content);
+                          editor?.getWrapper()?.append(content);
                         }
                       }
                     }}
@@ -60,7 +60,7 @@ export default function CustomBlockManager({
                       className={`${
                         !block.getLabel().includes("<svg ") &&
                         "min-h-10 min-w-10"
-                      } max-w-40 max-h-40 w-full p-2 flex items-center justify-center object-cover`}
+                      } max-w-40 max-h-40 w-full overflow-hidden p-2 flex items-center justify-center object-cover`}
                       dangerouslySetInnerHTML={{ __html: block.getMedia()! }}
                     />
                     {block?.getLabel() && (

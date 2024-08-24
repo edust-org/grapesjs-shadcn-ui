@@ -13,7 +13,7 @@ export const templatesPlugins = (editor: Editor) => {
       category: "Templates",
       label: ``,
       content: item.content,
-      media: `<img src="${item.thumbnail}" draggable="false"/>`,
+      media: `<img src="${item.thumbnail}" draggable="false" class="m-auto" />`,
     });
   });
 };
