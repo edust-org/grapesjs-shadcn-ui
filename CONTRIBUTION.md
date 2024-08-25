@@ -48,3 +48,38 @@ Dimensions: /720x600
 Color: /459ba8/fff
 
 </details>
+
+<br />
+<br />
+
+## How to Host Images on GitHub
+
+### Steps:
+
+1. _Create a local repository (folder)_
+
+   - Create a folder called `image-hoisting` (or any name you prefer).
+   - Download all the images you want to use.
+   - Optionally, rename the image files as needed.
+
+2. _Create a remote repository_
+
+   - Open GitHub and create a new repository called `image-hoisting`.
+   - Connect your local repository to the remote repository.
+
+3. _Push your images to GitHub_
+   - Run the following commands:
+     bash
+     git add .
+     git commit -m "Added images"
+     git push
+
+## How to Use Image Links from GitHub
+
+1. Open the GitHub repository.
+2. Navigate to the `images` folder (e.g., `image-hoisting`).
+3. Click on any image you want to use.
+4. Right-click on the image and select "Open image in new tab".
+5. Copy the URL from the address bar of the new tab.
+
+🎉 Congratulations! You now have the direct link to your image, which you can use as needed.
