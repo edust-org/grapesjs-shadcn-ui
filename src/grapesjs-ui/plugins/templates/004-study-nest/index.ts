@@ -10,11 +10,11 @@ import thumbnail from "./study-nest.avif";
 export const studyNest004 = {
     id: "004",
     content: `
-      <!-- Header section  -->
+       <!-- Header section  -->
     <header class=" ">
         <nav class="flex justify-between items-center px-8 text-white bg-[#00675f] text-[17px] p-4">
             <div class="flex justify-between items-center list-none gap-4">
-                <span class="px-3 py-2 bg-[#005e4f] rounded-full"> <i class="fa-solid fa-house"></i></span>
+                <span class="px-3 py-2 bg-[#005e4f] rounded-full"> <img src="https://github.com/DeveloperImran1/image-host-repo/blob/main/home-svgrepo-com.png?raw=true" alt="" class="w-[20px] h-[20px]"></span>
 
                <div class="hidden md:flex justify-between items-center list-none gap-4">
                 <li><a href="#">Home</a></li>
@@ -24,14 +24,14 @@ export const studyNest004 = {
                 <li><a href="#">Contact Us</a></li>
                </div>
             </div>
-            <div class="flex justify-between items-center gap-4">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-bars"></i>
+            <div class="flex justify-between items-center gap-4"> 
+                <img src="https://github.com/DeveloperImran1/image-host-repo/blob/main/search-svgrepo-com%20(1).png?raw=true" alt="" class="w-[20px] h-[20px]">
+                <img src="https://github.com/DeveloperImran1/image-host-repo/blob/main/sidebar-right-svgrepo-com.png?raw=true" alt="" class="w-[20px] h-[20px]">
             </div>
         </nav>
 
         <!-- banner section  -->
-        <section class="bg-[url('../Images/home-background.png')] w-full h-100vh bg-cover p-8 ">
+        <section class="bg-[url('https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/home-background.png')] w-full h-100vh bg-cover p-8 ">
 
             <div class="flex flex-col lg:flex-row justify-between items-center">
 
@@ -119,7 +119,7 @@ export const studyNest004 = {
 
 
         <!-- get to know us -->
-        <section class="mt-[100px] pb-[50px] px-8 bg-[url('./Images/course-1-bg-1.webp')] bg-cover ">
+        <section class="mt-[100px] pb-[50px] px-8 bg-[url('https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/course-1-bg-1.webp')] bg-cover ">
             <div class="flex flex-col lg:flex-row justify-between items-center">
                 <div>
                     <span class="flex gap-2 text-[20px] font-bold text-[#ce821a]">
@@ -168,7 +168,7 @@ export const studyNest004 = {
                             class="rounded-lg bg-[#284edb] px-4 py-2 font-semibold text-white duration-300 hover:scale-105 hover:bg-[#284edb]">View
                             Details</button>
                         <span class="font-semibold">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <img src="https://i.ibb.co/pXw1ymZ/star-svgrepo-com.png" class="h-[20px] w-[20px]" alt="">
                             4.5
                         </span>
                     </div>
@@ -201,7 +201,7 @@ export const studyNest004 = {
                             class="rounded-lg bg-[#284edb] px-4 py-2 font-semibold text-white duration-300 hover:scale-105 hover:bg-[#284edb]">View
                             Details</button>
                         <span class="font-semibold">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                           <img src="https://i.ibb.co/pXw1ymZ/star-svgrepo-com.png" class="h-[20px] w-[20px]" alt="">
                             4.5
                         </span>
                     </div>
@@ -234,7 +234,7 @@ export const studyNest004 = {
                             class="rounded-lg bg-[#284edb] px-4 py-2 font-semibold text-white duration-300 hover:scale-105 hover:bg-[#284edb]">View
                             Details</button>
                         <span class="font-semibold">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <img src="https://i.ibb.co/pXw1ymZ/star-svgrepo-com.png" class="h-[20px] w-[20px]" alt="">
                             4.5
                         </span>
                     </div>
@@ -267,7 +267,7 @@ export const studyNest004 = {
                             class="rounded-lg bg-[#284edb] px-4 py-2 font-semibold text-white duration-300 hover:scale-105 hover:bg-[#284edb]">View
                             Details</button>
                         <span class="font-semibold">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <img src="https://i.ibb.co/pXw1ymZ/star-svgrepo-com.png" class="h-[20px] w-[20px]" alt="">
                             4.5
                         </span>
                     </div>
@@ -330,7 +330,7 @@ export const studyNest004 = {
         </section>
 
         <!-- banner section  -->
-        <section class="bg-[url('../Images/section-background.webp')] w-full h-100vh bg-cover p-8 relative ">
+        <section class="bg-[url('https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/section-background.webp')] w-full h-100vh bg-cover p-8 relative ">
 
             <div class="flex flex-col lg:flex-row justify-between items-start gap-5">
 
@@ -357,11 +357,12 @@ export const studyNest004 = {
                     </div>
                     <div class="bg-white lg:w-1/2 p-3 lg:p-9 rounded-3xl">
                       <div class="flex justify-between items-center">
-                        <span class="bg-[#ef991f] p-2 inlilen-flex gap-1 rounded-3xl">
-                            <i class="fa-solid fa-star text-white"></i>
-                            <i class="fa-solid fa-star text-white"></i>
-                            <i class="fa-solid fa-star text-white"></i>
-                            <i class="fa-solid fa-star text-white"></i>
+                        <span class="bg-[#ef991f] p-2 flex gap-1 rounded-3xl">
+                            <img src="https://i.ibb.co/7NWr72k/star-svgrepo-com-1.png" class="w-[20px] h-[20px]" alt="">
+                            <img src="https://i.ibb.co/7NWr72k/star-svgrepo-com-1.png" class="w-[20px] h-[20px]" alt="">
+                            <img src="https://i.ibb.co/7NWr72k/star-svgrepo-com-1.png" class="w-[20px] h-[20px]" alt="">
+                            <img src="https://i.ibb.co/7NWr72k/star-svgrepo-com-1.png" class="w-[20px] h-[20px]" alt="">
+                         
                         </span>
                         <p class="text-xl font-medium">4.5</p>
                       </div>
@@ -380,10 +381,11 @@ export const studyNest004 = {
 
                     <div class="flex justify-center items-center absolute gap-4 my-[40px] bottom-[-160px]">
                         <span class="bg-[#ef991f] text-white rounded-full p-3 px-4">
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <img src="https://github.com/DeveloperImran1/image-host-repo/blob/main/left-arrow-backup-2-svgrepo-com.png?raw=true" class="w-[20px] h-[20px]" alt="">  
                         </span>
                         <span class="bg-[#ef991f] text-white rounded-full p-3 px-4">
-                            <i class="fa-solid fa-arrow-left"></i>
+                                             
+                            <img src="https://github.com/DeveloperImran1/image-host-repo/blob/main/right-arrow-backup-2-svgrepo-com.png?raw=true" class="w-[20px] h-[20px]" alt="">
                         </span>
                     </div>
                 </div>
@@ -399,7 +401,9 @@ export const studyNest004 = {
                     <div class="flex items-center gap-3 mt-4">
                    
 
-                      <p class="rounded-full bg-[#ef991f] p-3 px-4">  <i class="fa-solid fa-phone" style="color: #ffffff;"></i></p>
+                      <p class="rounded-full bg-[#ef991f] p-3 px-4">  
+                        <img src="https://github.com/DeveloperImran1/image-host-repo/blob/main/phone-call-svgrepo-com.png?raw=true" class="w-[20px] h-[20px]" alt="">
+                      </p>
                         
                         <div class="flex flex-col">
                             <h2 class="text-2xl font-semibold">Get In Touch</h2>
@@ -423,7 +427,7 @@ export const studyNest004 = {
 
         </section>
 
-        <footer class="py-6 text-white dark:text-white mt-[200px] bg-[url('./Images/f1-bg-1.webp')]">
+        <footer class="py-6 text-white dark:text-white mt-[200px] bg-[url('https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/f1-bg-1.webp')]">
             <div class="container px-6 mx-auto space-y-6 divide-y dark:divide-gray-600 md:space-y-12 divide-opacity-50">
                 <div class="grid grid-cols-12">
                     <div class="pb-6 col-span-full md:pb-0 md:col-span-6">
