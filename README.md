@@ -41,11 +41,11 @@ To get started with this project, follow these steps:
    pnpm run dev
    ```
 
-### 👥 [How to contribute here?](./CONTRIBUTION.md)
+### 👥 [How to contribute here? Checkout to click here](./CONTRIBUTION.md)
 
 ### Ask Questions
 
-If you have any questions or need help, feel free to ask in our [Discussion Forum](https://github.com/edust-org/grapesjs-shadcn-ui/discussions). We’re here to assist you!
+If you have any questions or need help, feel free to ask in our [GitHub Discussion Forum](https://github.com/edust-org/grapesjs-shadcn-ui/discussions) **recommended**. We’re here to assist you!
 
 ### 🔗 Community and Support
 
