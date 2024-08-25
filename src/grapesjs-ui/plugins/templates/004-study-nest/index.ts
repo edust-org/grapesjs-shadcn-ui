@@ -10,7 +10,7 @@ import thumbnail from "./study-nest.avif";
 export const studyNest004 = {
     id: "004",
     content: `
- <!-- Header section  -->
+      <!-- Header section  -->
     <header class=" ">
         <nav class="flex justify-between items-center px-8 text-white bg-[#00675f] text-[17px] p-4">
             <div class="flex justify-between items-center list-none gap-4">
@@ -38,7 +38,7 @@ export const studyNest004 = {
 
                 <div class="w-full lg:max-w-[45%]  ">
                     <span class="flex gap-2 text-[20px] font-bold text-[#ce821a]">
-                        <img src="./Images/star-2.webp" alt="" class="inline">
+                        <img src="https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/star-2.webp" alt="" class="inline">
                         <p>GURANTED & CERTIFIED</p>
                     </span>
                     <h1 class="text-[45px] lg:text-[62px] text-white font-[900] my-4">Online Platform for Education.</h1>
@@ -53,12 +53,12 @@ export const studyNest004 = {
 
                 <div class="relative  mb-[280px] ">
 
-                    <img src="./Images/Wmen-banner.webp" alt="" class="w-[400px] h-[400px] rounded-full z-50">
+                    <img src="https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/Wmen-banner.webp" alt="" class="w-[400px] h-[400px] rounded-full z-50">
 
-                    <img src="./Images/h1-img-1.webp" alt="" class="absolute top-[5px] right-[100px]">
+                    <img src="https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/h1-img-1.webp" alt="" class="absolute top-[5px] right-[100px]">
 
-                    <img src="./Images/star-2.webp" alt="" class="w-[40px] h-10 absolute top-[-24px] animate-spin">
-                    <img src="./Images/star-2.webp" alt=""
+                    <img src="https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/star-2.webp" alt="" class="w-[40px] h-10 absolute top-[-24px] animate-spin">
+                    <img src="https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/star-2.webp" alt=""
                         class="w-[40px] h-10 absolute bottom-[-184px] right-11 animate-spin">
 
                 </div>
@@ -75,7 +75,7 @@ export const studyNest004 = {
                     <li><a href="#">Next</a></li>
                 </div>
 
-                <img src="./Images/arrow icon.webp" alt=""
+                <img src="https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/arrow%20icon.webp" alt=""
                     class="w-[140px] h-10 absolute bottom-[150px] animate-bounce">
             </div>
 
@@ -88,7 +88,7 @@ export const studyNest004 = {
         <section class="mt-[100px] px-8 flex flex-col lg:flex-row justify-between gap-5">
             <div class="w-full lg:max-w-[35%]  ">
                 <span class="flex gap-2 text-[20px] font-bold text-[#ce821a]">
-                    <img src="./Images/star-2.webp" alt="" class="inline">
+                    <img src="https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/star-2.webp" alt="" class="inline">
                     <p>Online Class</p>
                 </span>
                 <h1 class="text-[42px] font-[900] my-4">Popular Category</h1>
@@ -100,21 +100,18 @@ export const studyNest004 = {
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between items-center gap-9 ">
                 <div class="p-10 rounded-2xl bg-gray-300 flex justify-center items-center relative">
-                    <img src="./Images/pc-1-icon-1.webp" alt="" class="  h-[90px] w-[90px]">
+                    <img src="https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/pc-1-icon-1.webp" alt="" class="  h-[90px] w-[90px]">
                     <p class="bg-[#284edb] text-white p-2 absolute bottom-[-10px] rounded-2xl">Art & Humatites</p>
                 </div>
                 <div class="p-10 rounded-2xl bg-gray-300 flex justify-center items-center relative">
-                    <img src="./Images/pc-1-icon-1.webp" alt="" class="  h-[90px] w-[90px]">
+                    <img src="https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/pc-1-icon-1.webp" alt="" class="  h-[90px] w-[90px]">
                     <p class="bg-[#284edb] text-white p-2 absolute bottom-[-10px] rounded-2xl">Web Development</p>
                 </div>
                 <div class="p-10 rounded-2xl bg-gray-300 flex justify-center items-center relative">
-                    <img src="./Images/pc-1-icon-1.webp" alt="" class="  h-[90px] w-[90px]">
+                    <img src="https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/pc-1-icon-1.webp" alt="" class="  h-[90px] w-[90px]">
                     <p class="bg-[#284edb] text-white p-2 absolute bottom-[-10px] rounded-2xl">Art & Humatites</p>
                 </div>
-                <div class="p-10 rounded-2xl bg-gray-300 flex justify-center items-center relative">
-                    <img src="./Images/pc-1-icon-1.webp" alt="" class="  h-[90px] w-[90px]">
-                    <p class="bg-[#284edb] text-white p-2 absolute bottom-[-10px] rounded-2xl">Graphics Design</p>
-                </div>
+              
 
             </div>
 
@@ -126,7 +123,7 @@ export const studyNest004 = {
             <div class="flex flex-col lg:flex-row justify-between items-center">
                 <div>
                     <span class="flex gap-2 text-[20px] font-bold text-[#ce821a]">
-                        <img src="./Images/star-2.webp" alt="" class="inline">
+                        <img src="https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/star-2.webp" alt="" class="inline">
                         <p>Get to Know Us</p>
 
                     </span>
@@ -155,7 +152,7 @@ export const studyNest004 = {
                         </div>
                         <img width={400} height={400}
                             class="rounded-lg bg-black/40 object-cover hover:scale-105 duration-300"
-                            src="./Images/design-1-400x235.webp" alt="card navigate ui" />
+                            src="https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/design-1-400x235.webp" alt="card navigate ui" />
                     </div>
                     <div class="space-y-2 font-semibold">
                         <h6 class="text-sm md:text-base lg:text-lg">Full Stack Webdevelopment</h6>
@@ -188,7 +185,7 @@ export const studyNest004 = {
                         </div>
                         <img width={400} height={400}
                             class="rounded-lg bg-black/40 object-cover hover:scale-105 duration-300"
-                            src="./Images/development-400x235.webp" alt="card navigate ui" />
+                            src="https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/development-400x235.webp" alt="card navigate ui" />
                     </div>
                     <div class="space-y-2 font-semibold">
                         <h6 class="text-sm md:text-base lg:text-lg">Full Stack Webdevelopment</h6>
@@ -221,7 +218,7 @@ export const studyNest004 = {
                         </div>
                         <img width={400} height={400}
                             class="rounded-lg bg-black/40 object-cover hover:scale-105 duration-300"
-                            src="./Images/digital-marketing-400x235.webp" alt="card navigate ui" />
+                            src="https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/digital-marketing-400x235.webp" alt="card navigate ui" />
                     </div>
                     <div class="space-y-2 font-semibold">
                         <h6 class="text-sm md:text-base lg:text-lg">Full Stack Webdevelopment</h6>
@@ -254,7 +251,7 @@ export const studyNest004 = {
                         </div>
                         <img width={400} height={400}
                             class="rounded-lg bg-black/40 object-cover hover:scale-105 duration-300"
-                            src="./Images/education-400x235.webp" alt="card navigate ui" />
+                            src="https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/education-400x235.webp" alt="card navigate ui" />
                     </div>
                     <div class="space-y-2 font-semibold">
                         <h6 class="text-sm md:text-base lg:text-lg">Full Stack Webdevelopment</h6>
@@ -294,7 +291,7 @@ export const studyNest004 = {
         <!-- Online video class section  -->
         <section class="mt-[50px] p-8">
             <span class="flex justify-center items-center gap-2 text-[32px] font-bold text-[#00675f]">
-                <img src="./Images/star-1.webp" alt="" class="inline">
+                <img src="https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/star-1.webp" alt="" class="inline">
                 <p>Video Course</p>
             </span>
             <p class="text-[35px] md:text-[45px] lg:text-[62px]  font-[900] my-4 text-center">Online Video Courses</p>
@@ -340,7 +337,7 @@ export const studyNest004 = {
 
                 <div class="lg:w-[35%]  ">
                     <span class="flex gap-2 text-[20px] font-bold text-white">
-                        <img src="./Images/star-3.webp" alt="" class="inline">
+                        <img src="https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/star-3.webp" alt="" class="inline">
                         <p>Testimonial</p>
                     </span>
                     <h1 class="text-[25px] md:text-[35px] lg:text-[42px] text-white font-[900] my-4">What Students
@@ -356,7 +353,7 @@ export const studyNest004 = {
 
                 <div class="flex flex-col lg:flex-row justify-center relative bg-white lg:w-[65%] mb-[280px] mx-auto h-[500px] rounded-3xl">
                     <div class="h-full lg:w-1/2 rounded-3xl">
-                        <img src="./Images/t1-img-2.webp" alt="Image" class="h-full w-full  object-cover rounded-3xl">
+                        <img src="https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/t1-img-2.webp" alt="Image" class="h-full w-full  object-cover rounded-3xl">
                     </div>
                     <div class="bg-white lg:w-1/2 p-3 lg:p-9 rounded-3xl">
                       <div class="flex justify-between items-center">
@@ -372,7 +369,7 @@ export const studyNest004 = {
                         <p class="text-[18px] text-gray-700 my-9">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque blanditiis illum perferendis ipsam, consequatur corporis facilis soluta dicta. Illo, alias!</p>
                         
                         <div class="flex items-center gap-3 mt-4">
-                            <img class="h-16 w-16 rounded-full bg-black/40 object-cover" src="https://images.unsplash.com/photo-1460904577954-8fadb262612c?q=80&w=1990&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="card navigate ui" />
+                            <img class="h-16 w-16 rounded-full bg-black/40 object-cover" src="https://raw.githubusercontent.com/DeveloperImran1/image-host-repo/main/photo-1460904577954-8fadb262612c.avif" alt="card navigate ui" />
                             
                             <div class="flex flex-col">
                                 <h2 class="text-xl font-semibold">Yoan Lee</h2>
