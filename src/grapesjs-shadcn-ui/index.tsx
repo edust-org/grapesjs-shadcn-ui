@@ -13,7 +13,7 @@ import {
 import { LeftPanel } from "./left-panel";
 import useWindowSize from "./hooks/use-window-resize";
 
-export const GrapesjsUI = () => {
+export const GrapesjsShadcnUI = () => {
   const { width: windowWidth } = useWindowSize();
   const editorRef = useRef<Editor | null>(null);
 
