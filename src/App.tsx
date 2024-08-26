@@ -1,9 +1,9 @@
-import { GrapesjsUI } from "./grapesjs-ui";
+import { GrapesjsShadcnUI } from "./grapesjs-shadcn-ui";
 
 function App() {
   return (
     <>
-      <GrapesjsUI />
+      <GrapesjsShadcnUI />
     </>
   );
 }
