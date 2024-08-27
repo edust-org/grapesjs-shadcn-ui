@@ -3,11 +3,16 @@ import { eduCrafets001 } from "./001-edu-crafters";
 import { eduEducation003 } from "./003-edu-education";
 import { polyNova002 } from "./002-poly-nova";
 import { studyNest004 } from "./004-study-nest";
-
-
+import { eduford005 } from "./005-eduford";
 
 // Import your template and add here [t1, t2, t3, ...]
-const items = [eduCrafets001, polyNova002, eduEducation003, studyNest004];
+const items = [
+  eduCrafets001,
+  polyNova002,
+  eduEducation003,
+  studyNest004,
+  eduford005,
+];
 
 export const templatesPlugins = (editor: Editor) => {
   const bm = editor.BlockManager;
