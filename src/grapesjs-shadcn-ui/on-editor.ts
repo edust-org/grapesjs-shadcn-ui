@@ -5,11 +5,17 @@ export default async (editor: Editor) => {
   {
     editor.Commands.add("save-db", {
       run: async () => {
-        const content = JSON.stringify({
-          html: editor.getHtml(),
-          css: editor.getCss(),
+        const pages = editor.Pages.getAll().map((page) => {
+          const component = page.getMainComponent();
+          return {
+            id: page.getId(),
+            name: page.getName(),
+            html: editor.getHtml({ component }),
+            css: editor.getCss({ component }),
+          };
         });
-        console.log(content);
+        console.log(pages);
+        console.log(editor.getProjectData());
       },
     });
 

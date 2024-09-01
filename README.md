@@ -51,6 +51,12 @@ If you have any questions or need help, feel free to ask in our [GitHub Discussi
 
 We highly recommend joining our community on [Discord](https://discord.gg/vnhqmn9mdj). Whether you want to collaborate, get support, or contribute to the project, you’ll find everything you need in our community.
 
+### Our Contributors
+
+<a href="https://github.com/edust-org/grapesjs-shadcn-ui/graphs/contributors">
+ <img src="https://contrib.rocks/image?repo=edust-org/grapesjs-shadcn-ui" />
+</a>
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
