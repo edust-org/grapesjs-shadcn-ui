@@ -5,6 +5,7 @@ import { polyNova002 } from "./002-poly-nova";
 import { studyNest004 } from "./004-study-nest";
 import { eduford005 } from "./005-eduford";
 import { lifeSchool006 } from "./006-lifeschool";
+import { elegentUniversity007 } from "./007-Elegent-University"
 
 // Import your template and add here [t1, t2, t3, ...]
 const items = [
@@ -14,6 +15,7 @@ const items = [
   studyNest004,
   eduford005,
   lifeSchool006,
+  elegentUniversity007,
 ];
 
 export const templatesPlugins = (editor: Editor) => {
