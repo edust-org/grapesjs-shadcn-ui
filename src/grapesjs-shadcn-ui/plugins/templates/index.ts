@@ -5,7 +5,7 @@ import { polyNova002 } from "./002-poly-nova";
 import { studyNest004 } from "./004-study-nest";
 import { eduford005 } from "./005-eduford";
 import { lifeSchool006 } from "./006-lifeschool";
-import { elegentUniversity007 } from "./007-Elegent-University"
+import { elegentUniversity007 } from "./007-elegent-university"
 
 // Import your template and add here [t1, t2, t3, ...]
 const items = [
